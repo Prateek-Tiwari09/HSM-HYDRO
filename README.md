@@ -1,7 +1,7 @@
 
 
 
-Clone th Repo : git clone 
+Clone th Repo :  
 
 Run this Command : npm install 
 
