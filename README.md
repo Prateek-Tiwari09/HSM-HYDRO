@@ -1,7 +1,7 @@
 
 
 
-Clone th Repo :  https://github.com/bhagatbhutale/HSMHydro.git
+Clone th Repo : https://github.com/Prateek-Tiwari09/HSM-HYDRO.git
 
 Run this Command : npm install 
 
