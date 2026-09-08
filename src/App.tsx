@@ -23,18 +23,18 @@ import {
 } from "./pages/AdditionalPages";
 
 const pageMeta: Record<string, { title: string; description: string }> = {
-  "/": { title: "HSM Hydro Control Pvt. Ltd. | Complete Hydraulic Solutions", description: "Hydraulic engineering, manufacturing, installation and service support from HSM Hydro Control Pvt. Ltd." },
-  "/about": { title: "About HSM Hydro Control | Hydraulic Engineering & Manufacturing", description: "Learn about HSM Hydro Control, its engineering capabilities, manufacturing facility and service support." },
-  "/products": { title: "Hydraulic Products | HSM Hydro Control", description: "Explore hydraulic power units, cylinders, test benches, components and filtration systems from HSM Hydro Control." },
-  "/services": { title: "Hydraulic Services | HSM Hydro Control", description: "Engineering, installation, commissioning, repair, troubleshooting and maintenance support for hydraulic systems." },
-  "/infrastructure": { title: "Infrastructure | HSM Hydro Control", description: "Explore the manufacturing and service capabilities supporting HSM hydraulic solutions." },
-  "/contact": { title: "Contact HSM Hydro Control | Bangalore & Pune", description: "Contact HSM Hydro Control for hydraulic products, engineering support and service enquiries." },
-  "/faq": { title: "Hydraulic FAQ | HSM Hydro Control", description: "Answers about HSM hydraulic products, services, customization and enquiry process." },
-  "/testimonials": { title: "Customer Experience | HSM Hydro Control", description: "Learn how HSM approaches reliable hydraulic engineering and customer support." },
-  "/enquiry": { title: "Hydraulic Enquiry | HSM Hydro Control", description: "Share your industrial hydraulic product or service requirement with HSM Hydro Control." },
-  "/blog": { title: "Hydraulic Engineering Insights | HSM Hydro Control", description: "Practical notes about hydraulic equipment, industrial applications and system maintenance." },
-  "/privacy-policy": { title: "Privacy Policy | HSM Hydro Control", description: "Privacy information for the HSM Hydro Control website." },
-  "/terms-of-service": { title: "Terms of Service | HSM Hydro Control", description: "Website terms of service for HSM Hydro Control." },
+  "/": { title: "Shri Ramraj Engineering | Hydraulic Engineering Solutions", description: "Design consultation, hydraulic and pneumatic cylinder repair, machine parts, sealing solutions and metalizing services." },
+  "/about": { title: "About Shri Ramraj Engineering", description: "Learn about Shri Ramraj Engineering's engineering team, industrial repair expertise, quality practices and associations." },
+  "/products": { title: "Hydraulic Products & Expertise | Shri Ramraj Engineering", description: "Explore cylinder expertise, rotary unions, mill blocks, sensor housings, seals and fittings." },
+  "/services": { title: "Engineering Services | Shri Ramraj Engineering", description: "Piston rod repair, seal groove machining, shaft repair, metalizing, plating and design consultation." },
+  "/infrastructure": { title: "Machines & Facilities | Shri Ramraj Engineering", description: "Review the machines, hydraulic test bench and measurement instruments listed by Shri Ramraj Engineering." },
+  "/contact": { title: "Contact Shri Ramraj Engineering", description: "Contact Shri Ramraj Engineering at its registered office or works for engineering enquiries." },
+  "/faq": { title: "FAQ | Shri Ramraj Engineering", description: "Answers about Shri Ramraj Engineering's hydraulic products, repairs, services and enquiries." },
+  "/testimonials": { title: "Customer Experience | Shri Ramraj Engineering", description: "Learn about Shri Ramraj Engineering's quality and service approach." },
+  "/enquiry": { title: "Engineering Enquiry | Shri Ramraj Engineering", description: "Share your hydraulic, pneumatic or industrial machining requirement with Shri Ramraj Engineering." },
+  "/blog": { title: "Engineering Insights | Shri Ramraj Engineering", description: "Practical notes about hydraulic cylinders, industrial repair and engineering services." },
+  "/privacy-policy": { title: "Privacy Policy | Shri Ramraj Engineering", description: "Privacy information for the Shri Ramraj Engineering website." },
+  "/terms-of-service": { title: "Terms of Service | Shri Ramraj Engineering", description: "Website terms of service for Shri Ramraj Engineering." },
 };
 
 function ScrollToTop() {
@@ -42,12 +42,12 @@ function ScrollToTop() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
     const meta = pageMeta[pathname] ?? (pathname.startsWith("/products/")
-      ? { title: "Hydraulic Product | HSM Hydro Control", description: "Explore this hydraulic product from HSM Hydro Control." }
+      ? { title: "Hydraulic Expertise | Shri Ramraj Engineering", description: "Explore this expertise from Shri Ramraj Engineering." }
       : pathname.startsWith("/services/")
-        ? { title: "Hydraulic Service | HSM Hydro Control", description: "Explore this hydraulic service from HSM Hydro Control." }
+        ? { title: "Engineering Service | Shri Ramraj Engineering", description: "Explore this service from Shri Ramraj Engineering." }
         : pathname.startsWith("/blog/")
-          ? { title: "Hydraulic Insight | HSM Hydro Control", description: "Read an engineering insight from HSM Hydro Control." }
-          : { title: "Page Not Found | HSM Hydro Control", description: "The requested HSM Hydro Control page could not be found." });
+          ? { title: "Engineering Insight | Shri Ramraj Engineering", description: "Read an engineering insight from Shri Ramraj Engineering." }
+          : { title: "Page Not Found | Shri Ramraj Engineering", description: "The requested Shri Ramraj Engineering page could not be found." });
     document.title = meta.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", meta.description);
     document.querySelector('meta[property="og:title"]')?.setAttribute("content", meta.title);

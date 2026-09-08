@@ -44,13 +44,13 @@ export default function Navbar() {
     >
       <nav className="container-x flex h-16 lg:h-[72px] items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5 group" aria-label="HSM Hydro Control Home">
+        <Link to="/" className="flex items-center gap-2.5 group" aria-label="Shri Ramraj Engineering Home">
           <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0F172A] text-[#F97316] font-heading font-extrabold text-sm tracking-tight">
-            HSM
+            <img src="/assets/shri-ramraj-engineering-logo.jpg" alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-heading font-bold text-[15px] text-[#0F172A]">
-              HSM Hydro Control
+              Shri Ramraj Engineering
             </span>
             <span className="text-[11px] text-[#64748B] font-medium tracking-wide">
               
@@ -123,11 +123,11 @@ export default function Navbar() {
         {/* Right actions */}
         <div className="flex items-center gap-2 lg:gap-3">
           <a
-            href="tel:+919740392560"
+            href="tel:+919967886168"
             className="hidden md:inline-flex items-center gap-2 text-[13.5px] font-medium text-[#475569] hover:text-[#0F172A] mr-1"
           >
             <Phone className="h-4 w-4 text-[#F97316]" />
-            +91 97403 92560
+            +91 9967886168
           </a>
           <Link
             to="/contact"
@@ -156,10 +156,10 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-16 px-5 border-b border-[#E2E8F0]">
               <div className="flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0F172A] text-[#F97316] font-heading font-extrabold text-[12px]">
-                  HSM
+                  <img src="/assets/shri-ramraj-engineering-logo.jpg" alt="Shri Ramraj Engineering logo" className="h-9 w-9 rounded-md object-cover" />
                 </div>
                 <span className="font-heading font-bold text-[15px] text-[#0F172A]">
-                  HSM Hydro Control
+                  Shri Ramraj Engineering
                 </span>
               </div>
               <button
@@ -234,7 +234,7 @@ export default function Navbar() {
                 Get a Quote
               </Link>
               <a
-                href="tel:+919740392560"
+                href="tel:+919967886168"
                 className="flex w-full items-center justify-center gap-2 rounded-md border border-[#E2E8F0] px-4 py-3 text-[14px] font-semibold text-[#0F172A]"
               >
                 <Phone className="h-4 w-4 text-[#F97316]" />

@@ -1,436 +1,88 @@
-// Verified company information from https://hsmhcpl.com/
-// Do not invent or modify numbers, addresses, or stats.
-
 export const COMPANY = {
-  name: "HSM Hydro Control Pvt. Ltd.",
-  shortName: "HSM",
-  tagline: "Complete Hydraulic Solutions for Industrial Applications",
-  established: 2015,
-  certification: "ISO 9001:2015",
-  facilitySqft: "10,000+",
-  teamCount: "25+",
-  description:
-    "HSM Hydro Control Pvt. Ltd. is a single-window solution for all your hydraulics requirements, providing customized hydraulic engineering, sales, and service support to organizations across India and overseas.",
+  name: "Shri Ramraj Engineering",
+  shortName: "SR",
+  tagline: "Serve the Best & supply Earliest at Lowest cost.",
+  description: "Shri Ramraj Engineering provides design consultations, repairs and modifications of hydraulic and pneumatic cylinders, machine parts, sealing solutions and spares for hydraulic equipment.",
   aboutLong: [
-    "Incorporated in 2015, HSM Hydro Control Pvt. Ltd. is a single-window solution for all your hydraulics requirements, providing customized hydraulic engineering, sales, and service support to organizations all over India.",
-    "We specialize in both closed-loop and open-loop hydraulic systems and manufacture customized power units for a wide range of industrial applications. We also have deep expertise in overhauling and repairing hydraulic pumps and motors from reputed global brands including Denison, Hagglunds, Bosch Rexroth, Danfoss, Parker, Sauer Danfoss, Eaton, Vickers, and Yuken.",
-    "We also undertake the repair of hydraulic cylinders. Over the years, the HSM team has built a reputation for high-quality service and quick repair turnaround times that keep customers coming back.",
+    "Shri Ramraj Engineering provides design consultations, repairs and modifications of hydraulic and pneumatic cylinders, machine parts, sealing solutions and spares for all kinds of hydraulic equipment.",
+    "We are a team of young and energetic engineers with varied experience in the design and manufacturing of heavy industrial machine parts requiring application knowledge and methodological expertise.",
+    "Shri Ramraj Engineering has partnered with Usha Engineering Work, a reputed name in heavy engineering supplying services to top steel plants in the country for a long time. This helps us timely fabricate components of any size.",
+    "The company also has an association with Bari Metal Finishers, a reputed name in heavy engineering supplying services to top steel plants in the country for a long time. This association helps Shri Ramraj Engineering timely fabricate engineering components of any size.",
+    "We offer metalizing services including cladding, welding and metal spraying to repair mill shafts, piston rods, pinions and crank shafts. Quality signifies long service life, reliability, durability and safety, supported by strict inspection criteria, production methodology, testing methods and acceptance norms.",
   ],
-  strengths: ["Technology", "Engineering", "Quality", "Reliability", "Maintenance"],
+  strengths: ["Application Knowledge", "Engineering", "Quality", "Reliability", "Safety"],
 };
 
 export const OFFICES = [
-  {
-    type: "Corporate Office & Manufacturing Plant",
-    address:
-      "No. 6 & 7, 1st Main Road, Sri Lakshmi Industrial Estate, Thigalara Palya Main Road, Peenya 2nd Stage, Bangalore – 560058, Karnataka, India.",
-    phones: ["+91-9740392560", "080-43747543"],
-    emails: ["cmk@hsmhcpl.com", "sales@hsmhcpl.com"],
-  },
-  {
-    type: "Branch Office",
-    address:
-      "MB House, Sy. No. 27/3, Kharadi Industrial Area, Pune – 411014, Maharashtra, India.",
-    phones: ["+91-9309972184"],
-    emails: ["bmhs@hsmhcpl.com"],
-  },
+  { type: "Registered Office", address: "57 Kha, Tripathi Sadan, Baghambari Road, Allahpur, Prayagraj, Uttar Pradesh – 211006.", phones: ["+91 9967886168"], emails: ["sales1.srre@gmail.com"] },
+  { type: "Works", address: "Plot No. B-7, Additional MIDC, Anand Nagar, Ambarnath – 410506, Maharashtra, India.", phones: [], emails: [] },
 ];
 
-export const WHATSAPP_NUMBER = "919740392560"; // from Bangalore primary phone
-export const PRIMARY_PHONE = "+91 97403 92560";
-export const PRIMARY_EMAIL = "sales@hsmhcpl.com";
+export const WHATSAPP_NUMBER = "919967886168";
+export const PRIMARY_PHONE = "+91 9967886168";
+export const PRIMARY_EMAIL = "sales1.srre@gmail.com";
+export const GSTIN = "09ANLPT4807G1ZL";
+export const IEC = "ANLPT4807G";
+const localImage = "/assets/hydraulic-cylinder-finished.jpg";
 
-export type Product = {
-  slug: string;
-  name: string;
-  shortDescription: string;
-  description: string;
-  image: string;
-  features?: string[];
-  specifications?: { label: string; value: string }[];
-  applications?: string[];
-};
+export type Product = { slug: string; name: string; shortDescription: string; description: string; image: string; features?: string[]; specifications?: { label: string; value: string }[]; applications?: string[] };
 
+const product = (slug: string, name: string, description: string, features: string[], imagePath = localImage): Product => ({ slug, name, shortDescription: description, description, image: imagePath, features });
 export const PRODUCTS: Product[] = [
-  {
-    slug: "hydraulic-components",
-    name: "Hydraulic Components & Accessories",
-    shortDescription:
-      "Comprehensive range of hydraulic components and accessories for industrial systems.",
-    description:
-      "We supply a complete range of hydraulic components and accessories including fittings, O-rings, level gauges, breathers, bell housings, couplings, filters, flexible hoses, valves, accumulators, pressure gauges, manifolds, oil coolers and more.",
-    image:
-      "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1200&q=80",
-    features: [
-      "Fittings, O-rings, Level Gauge, Breather",
-      "Bell Housing & Coupling",
-      "Filters, Flexible Hoses & Valves",
-      "Accumulators, Pressure Gauges, Transmitters",
-      "Shell & tube / plate type oil coolers",
-      "Directional, Pressure, Flow & Logic Valves",
-    ],
-  },
-  {
-    slug: "hydraulic-power-unit",
-    name: "Hydraulic Power Units",
-    shortDescription:
-      "Custom-engineered hydraulic power packs, lube oil systems and filtration systems for industrial & mobile applications.",
-    description:
-      "Hydraulic power packs represent complete hydraulic power units, lube oil systems, and filtration systems used in both industrial and mobile applications. Custom-designed to meet customer-specific process applications, production demands and capacity requirements.",
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
-    features: [
-      "Customized engineering for each application",
-      "Closed loop and open loop systems",
-      "Turnkey project delivery",
-      "Performance guarantees",
-      "On-site installation & commissioning",
-      "Integrated lube oil and filtration options",
-    ],
-    specifications: [
-      { label: "Tank Capacity", value: "20 – 5,000 Liters" },
-      { label: "Power", value: "0.55 – 250 kW" },
-      { label: "Flow Rate", value: "0.5 – 750 LPM" },
-      { label: "Pressure", value: "5 – 800 BAR" },
-      { label: "Material", value: "MS & SS" },
-      { label: "Filtration", value: "10 – 20 Microns" },
-    ],
-  },
-  {
-    slug: "hydraulic-cylinder",
-    name: "Hydraulic Cylinders",
-    shortDescription:
-      "Design and manufacturing of standard & servo hydraulic cylinders (single & double acting) as per ISO standards.",
-    description:
-      "We design and manufacture a complete range of hydraulic cylinders including servo cylinders, tie-rod type, welded construction and mill-type cylinders, all built to ISO standards. Cylinders are available in single and double acting configurations with custom mounting and stroke options.",
-    image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
-    features: [
-      "Servo cylinders for precision applications",
-      "Tie-rod type with 10 mounting options",
-      "Welded construction & mill type",
-      "Single and double acting",
-      "Custom strokes and bores available",
-      "Spare seal kits & mounting accessories",
-    ],
-    specifications: [
-      { label: "Tie Rod Bore", value: "Ø25 – Ø200 mm" },
-      { label: "Mill Type Bore", value: "Ø25 – Ø500 mm" },
-      { label: "Max Stroke (Mill)", value: "Up to 5,000 mm" },
-      { label: "Standard Pressure", value: "210 / 350 kg/cm²" },
-      { label: "High Pressure Range", value: "550 / 700 kg/cm²" },
-      { label: "Servo Speed", value: "Up to 250 mm/s" },
-    ],
-  },
-  {
-    slug: "hydraulic-test-bench",
-    name: "Hydraulic Test Benches",
-    shortDescription:
-      "High-pressure hydraulic test benches for testing industrial valves, pumps, motors and cylinders. Customized as required.",
-    description:
-      "We offer high-pressure hydraulic test benches used to test industrial valves and other hydraulic components. We also build fully customized test benches to match client-specific requirements. Our test benches are simple, robust and reliable.",
-    image:
-      "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=80",
-    features: [
-      "Suitable for valve, pump, motor & cylinder testing",
-      "High pressure capability",
-      "Custom configurations available",
-      "Data logging options",
-      "Robust, reliable design",
-      "Factory acceptance testing",
-    ],
-    specifications: [
-      { label: "Tank Capacity", value: "20 – 2,000 Liters" },
-      { label: "Power", value: "0.55 – 160 kW" },
-      { label: "Flow Rate", value: "42 – 400 LPM" },
-      { label: "Pressure", value: "0.5 – 1,200 BAR" },
-    ],
-  },
-  {
-    slug: "lube-oil-filtration",
-    name: "Lube Oil & Filtration Systems",
-    shortDescription:
-      "Engineered lubrication systems and filtration units for industrial machinery reliability.",
-    description:
-      "We design and manufacture dedicated lube oil systems and filtration units tailored to specific industrial machinery requirements, ensuring clean lubrication, cooling, and long equipment life.",
-    image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=80",
-    features: [
-      "Custom-designed lube oil systems",
-      "Pressure and return filtration",
-      "10–20 micron filtration",
-      "Oil cooling options",
-      "Level & temperature monitoring",
-      "Suitable for industrial & power applications",
-    ],
-  },
-  {
-    slug: "hydraulic-manifold-blocks",
-    name: "Hydraulic Manifold Blocks",
-    shortDescription:
-      "Design and manufacturing of special hydraulic manifold blocks for integrated hydraulic circuits.",
-    description:
-      "We design and manufacture custom hydraulic manifold blocks that integrate multiple valves and components into a single compact assembly, reducing piping, leak points and installation time.",
-    image:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1200&q=80",
-    features: [
-      "Custom design per circuit requirement",
-      "CNC-machined manifolds",
-      "Integrated valve mounting",
-      "Reduced leak points",
-      "Compact installation",
-      "Material options: MS & SS",
-    ],
-  },
+  product("raw-mill-cylinders", "Raw Mill Cylinders", "Hydraulic cylinder expertise for raw mill applications.", ["Repair and modification", "Application-focused consultation", "Inspection and testing"], "/assets/hydraulic-cylinder-finished.jpg"),
+  product("hagc-roll-force-cylinders", "HAGC (Roll Force Cylinders)", "Cylinder support for HAGC roll force applications.", ["Repair support", "Piston rod work", "Sealing solutions"], "/assets/hydraulic-cylinder-component.jpg"),
+  product("ladle-tundish-cylinders", "Ladle Turret & Tundish Cylinders", "Engineering support for ladle turret and tundish cylinders.", ["Cylinder repair", "Custom seals", "Testing methods"], "/assets/cylinder-assemblies.jpg"),
+  product("astc-pinch-roll-cylinders", "ASTC & Pinch Roll Cylinders", "Repair and modification support for ASTC and pinch roll cylinders.", ["Repair and modification", "Seal groove machining", "Inspection"], "/assets/piston-rod-repair.jpg"),
+  product("rotary-unions", "Rotary Unions", "Rotary union support for industrial equipment applications.", ["Application consultation", "Supply support", "Sealing solutions"], "/assets/rotary-hydraulic-component.jpg"),
+  product("wrapper-entry-stripper-cylinders", "Wrapper, Entry Guide & Stripper Car Cylinders", "Cylinder support for wrapper roll, entry guide and stripper car applications.", ["Repair support", "Piston rod repair", "Custom seals"], "/assets/cylinder-assemblies.jpg"),
+  product("mill-blocks-sensor-housings", "Mill Blocks & Sensor Housings", "Components for CSP and HSM mills, including sensor housings.", ["Component fabrication", "Application knowledge", "Inspection criteria"], "/assets/industrial-machinery.jpg"),
+  product("seals-fittings", "Hydraulic & Pneumatic Seals and Fittings", "Supply of hydraulic and pneumatic seals and fittings.", ["Hydraulic seals", "Pneumatic seals", "Hydraulic and pneumatic fittings"], "/assets/hydraulic-seals.jpg"),
 ];
 
-export type Service = {
-  slug: string;
-  name: string;
-  shortDescription: string;
-  description: string;
-  icon: string;
-  features?: string[];
-};
-
+export type Service = { slug: string; name: string; shortDescription: string; description: string; icon: string; features?: string[] };
+const service = (slug: string, name: string, description: string, icon: string, features: string[]): Service => ({ slug, name, shortDescription: description, description, icon, features });
 export const SERVICES: Service[] = [
-  {
-    slug: "pump-service",
-    name: "Hydraulic Pump Service",
-    shortDescription:
-      "Repair, reconditioning and testing of all major brands of hydraulic pumps.",
-    description:
-      "We provide complete repair and reconditioning services for hydraulic pumps including axial piston, vane, gear and radial piston pumps from brands like Denison, Parker, Bosch Rexroth, Sauer Danfoss, Eaton, Vickers, Yuken, Hagglunds and more.",
-    icon: "Settings",
-    features: [
-      "Complete disassembly and inspection",
-      "Replacement of worn components",
-      "Seal kit replacement",
-      "Performance testing on our test bench",
-      "Parker Gold Cup series expertise",
-    ],
-  },
-  {
-    slug: "motor-service",
-    name: "Hydraulic Motor Service",
-    shortDescription:
-      "Expert repair and overhaul of hydraulic motors from leading global brands.",
-    description:
-      "Our team repairs and reconditions hydraulic motors of all major OEM brands with fast turnaround and guaranteed workmanship. Each motor is disassembled, inspected, rebuilt and tested before return.",
-    icon: "Cog",
-    features: [
-      "Axial piston, gear & vane motors",
-      "Hagglunds radial piston motor expertise",
-      "Full load testing after repair",
-      "Genuine spare parts",
-      "On-site troubleshooting support",
-    ],
-  },
-  {
-    slug: "cylinder-service",
-    name: "Hydraulic Cylinder Service",
-    shortDescription:
-      "Repair, reconditioning and seal replacement for all types of hydraulic cylinders.",
-    description:
-      "We repair hydraulic cylinders of all types — tie-rod, welded, mill-type and servo cylinders, including honing of barrels, re-chroming of rods and replacement of seal kits.",
-    icon: "MoveVertical",
-    features: [
-      "Seal kit replacement",
-      "Barrel honing",
-      "Piston rod re-chroming",
-      "Pressure testing after repair",
-      "Mounting accessories replacement",
-    ],
-  },
-  {
-    slug: "troubleshooting",
-    name: "Hydraulic Troubleshooting",
-    shortDescription:
-      "On-site and in-shop fault diagnosis for hydraulic systems of all makes.",
-    description:
-      "Our experienced field engineers diagnose and resolve hydraulic system issues — pressure problems, overheating, leaks, noise, erratic motion — to minimize your downtime.",
-    icon: "Wrench",
-    features: [
-      "On-site troubleshooting visits",
-      "System pressure & flow analysis",
-      "Root cause analysis",
-      "Preventive recommendations",
-      "Support across India",
-    ],
-  },
-  {
-    slug: "amc",
-    name: "Annual Maintenance Contracts (AMC)",
-    shortDescription:
-      "Scheduled preventive maintenance to keep your hydraulic equipment at peak performance.",
-    description:
-      "We offer annual maintenance contracts covering scheduled inspections, fluid changes, filter changes, performance audits and priority support to keep your hydraulic systems reliable.",
-    icon: "CalendarCheck",
-    features: [
-      "Planned preventive maintenance",
-      "Scheduled inspections",
-      "Fluid & filter changes",
-      "Priority breakdown support",
-      "Performance reports",
-    ],
-  },
-  {
-    slug: "installation-commissioning",
-    name: "Installation & Commissioning",
-    shortDescription:
-      "Turnkey erection and commissioning of hydraulic systems and power units.",
-    description:
-      "Complete erection and commissioning support for new hydraulic power units, lube oil systems, test benches and retrofits, including flushing, pressure testing and start-up.",
-    icon: "Plug",
-    features: [
-      "Site survey and planning",
-      "Flushing & pressure testing",
-      "System start-up",
-      "Operator training",
-      "Performance validation",
-    ],
-  },
-  {
-    slug: "retrofit",
-    name: "Retrofit & Upgradation",
-    shortDescription:
-      "Upgrade legacy hydraulic systems with modern components and controls for improved performance.",
-    description:
-      "We retrofit and upgrade existing hydraulic systems with modern pumps, valves, manifolds and controls to improve performance, energy efficiency and reliability.",
-    icon: "RefreshCw",
-    features: [
-      "Legacy system assessment",
-      "Control upgrades",
-      "Energy saving conversions (VFD)",
-      "Component replacement",
-      "Documentation & training",
-    ],
-  },
-  {
-    slug: "testing-inspection",
-    name: "Testing & Inspection",
-    shortDescription:
-      "Comprehensive hydraulic testing, inspection and condition monitoring services.",
-    description:
-      "We provide testing and inspection of pumps, motors, cylinders, valves and complete systems using our in-house test benches and portable diagnostic equipment.",
-    icon: "ClipboardCheck",
-    features: [
-      "In-house test bench facility",
-      "Flow & pressure testing",
-      "Oil analysis support",
-      "Data logging & reports",
-      "Third-party inspection support",
-    ],
-  },
+  service("piston-rod-repair", "Piston Rod Repair", "Repair support for piston rods used in industrial cylinders.", "Settings", ["Piston rod repair", "Piston head cladding", "Inspection"]),
+  service("seal-groove-machining", "Seal Groove Machining", "Machining support for seal grooves and custom sealing requirements.", "Cog", ["Seal groove machining", "Custom seal supply", "Sealing solutions"]),
+  service("shaft-coupling-repair", "Shaft & Coupling Repair", "Repair and machining jobs for shafts, couplings and marine applications.", "Wrench", ["Shaft repair", "Coupling repair", "Marine machining jobs"]),
+  service("metalizing-services", "Metalizing Services", "Cladding, welding and metal spraying for component repair.", "Hammer", ["Cladding", "Welding", "Metal spraying"]),
+  service("hard-chrome-plating", "Hard Chrome Plating", "Hard chrome plating services for industrial components.", "Factory", ["Component preparation", "Plating service", "Inspection"]),
+  service("design-consultation", "Design Consultation", "Application-focused design consultation for industrial machine parts.", "ClipboardCheck", ["Application review", "Engineering consultation", "Manufacturing guidance"]),
 ];
 
 export const CAPABILITIES = [
-  {
-    title: "Design & Engineering",
-    description:
-      "Custom design of hydraulic power packs, test rigs, cylinders and manifold blocks backed by application engineering.",
-  },
-  {
-    title: "Manufacturing",
-    description:
-      "In-house manufacturing of hydraulic power units, cylinders, test benches, lube oil systems and manifold blocks at our 10,000 sq.ft. Bangalore facility.",
-  },
-  {
-    title: "Installation & Commissioning",
-    description:
-      "Turnkey erection, flushing, testing and commissioning of complete hydraulic systems across India.",
-  },
-  {
-    title: "Repair & Maintenance",
-    description:
-      "Overhaul, repair and reconditioning of hydraulic pumps, motors and cylinders with fast turnaround and AMC support.",
-  },
+  { title: "Design Consultation", description: "Application knowledge and methodological expertise for heavy industrial machine parts." },
+  { title: "Repair & Modification", description: "Hydraulic and pneumatic cylinder repair, modification and sealing solutions." },
+  { title: "Metalizing", description: "Cladding, welding and metal spraying for shafts, rods, pinions and crank shafts." },
+  { title: "Inspection & Testing", description: "Strict inspection criteria, production methodology, testing methods and acceptance norms." },
 ];
-
-export const TECH_STATS = [
-  { value: "750", unit: "LPM", label: "Max Flow Rate" },
-  { value: "1200", unit: "BAR", label: "Test Bench Pressure" },
-  { value: "250", unit: "kW", label: "Max Power Rating" },
-  { value: "800", unit: "BAR", label: "System Pressure" },
-];
-
+export const TECH_STATS = [{ value: "350", unit: "BAR", label: "Test Bench Pressure" }, { value: "1000", unit: "L", label: "Test Bench Capacity" }, { value: "10", unit: "MICRON", label: "Test Bench Filters" }, { value: "2", unit: "CRANES", label: "10-Ton Lifting Cranes" }];
 export const WHY_CHOOSE = [
-  {
-    number: "01",
-    title: "Industry Experience",
-    description:
-      "Incorporated in 2015 with a team of engineers having deep experience in hydraulic systems across a wide range of industries.",
-  },
-  {
-    number: "02",
-    title: "ISO 9001:2015 Quality",
-    description:
-      "ISO 9001:2015 certified processes ensuring consistent quality in design, manufacturing and service.",
-  },
-  {
-    number: "03",
-    title: "Engineering Expertise",
-    description:
-      "In-house design capability for power units, test rigs, cylinders, manifolds, lube oil and filtration systems.",
-  },
-  {
-    number: "04",
-    title: "Complete Hydraulic Solutions",
-    description:
-      "A single window for design, manufacturing, supply, installation, commissioning, repair, retrofit and AMC.",
-  },
-  {
-    number: "05",
-    title: "Quality & Reliability",
-    description:
-      "We work with reputed global OEM brands and follow strict quality checks to deliver reliable, long-lasting solutions.",
-  },
-  {
-    number: "06",
-    title: "Service & Maintenance Support",
-    description:
-      "Quick turnaround on repairs, on-site troubleshooting and annual maintenance contracts across India.",
-  },
+  { number: "01", title: "Engineering Team", description: "A young and energetic engineering team with experience in heavy industrial machine parts." },
+  { number: "02", title: "Application Knowledge", description: "Methodological expertise shaped around demanding industrial applications." },
+  { number: "03", title: "Quality Focus", description: "Quality, reliability, durability and safety supported by strict inspection criteria." },
+  { number: "04", title: "Repair Expertise", description: "Repair, modification, cladding, welding and metal spraying services." },
+  { number: "05", title: "Engineering Associations", description: "Associations with Bari Metal Finishers and Usha Engineering Work support timely fabrication of components of any size." },
+  { number: "06", title: "Service Performance", description: "Service quality and performance reflecting the motto: Serve the Best & supply Earliest at Lowest cost." },
 ];
-
-export const INDUSTRIES = [
-  "Bulk Material Handling",
-  "Power Plants",
-  "Steel",
-  "Mining Machineries",
-  "Foundry & Forging",
-  "Sugar",
-  "Paper",
-  "Machine Tools",
-  "Construction",
-  "Rubber & Chemical",
-  "Defence",
-  "Marine & Offshore",
-];
-
+export const INDUSTRIES = ["Steel Plants", "Marine Applications"];
 export const INFRASTRUCTURE = [
-  {
-    title: "Shop Floor",
-    description: "Our main manufacturing and assembly shop floor in Bangalore.",
-    image:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Assembly Area",
-    description: "Dedicated assembly zones for power units and cylinders.",
-    image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Testing Facility",
-    description: "In-house test benches for pumps, motors, cylinders and systems.",
-    image:
-      "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Manufacturing",
-    description: "Precision machining and fabrication facilities.",
-    image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
-  },
+  { title: "Horizontal Boring Machine", description: "100 Spindle, 1600 x 1200 x 2500, Make: Toss.", image: "/assets/industrial-machinery.jpg" },
+  { title: "Lathe Machines", description: "460 mm centre height x 3200 mm and 670 mm centre height x 2500 mm. Make: Rajendra.", image: "/assets/shaft-repair.jpg" },
+  { title: "VMC & Plano Miller", description: "VMC machines by Lead Well and STM, plus Plano Miller 1200H x 1500W x 4000L, Make: Korea.", image: "/assets/hydraulic-equipment.jpg" },
+  { title: "Hydraulic Test Bench", description: "1000 litres with 10 micron filters and pressure of 350 bar.", image: "/assets/cylinder-assemblies.jpg" },
+];
+export const MACHINES = [
+  "Horizontal Boring Machine — 100 Spindle, 1600 x 1200 x 2500, Make: Toss",
+  "Lathe Machine — 460 mm Centre Height, 3200 mm Long, Make: Rajendra",
+  "Lathe Machine — 670 mm Centre Height, 2500 mm Long, Make: Rajendra",
+  "VMC Machine — X-1200 x Y-650 x Z-750, Make: Lead Well",
+  "VMC Machine — 1200 x 550 x 550, Make: STM",
+  "Plano Miller — 1200H x 1500W x 4000L, Make: Korea",
+  "Welding Machine Rectifier — 500 Ampere, 8 numbers",
+  "Lifting Crane with Hoist — 10 & 10 Ton, two cranes",
+  "Hydraulic Test Bench — 1000 litres, 10 micron filters, pressure 350 bar",
+];
+export const INSTRUMENTS = [
+  ["12\" Vernier", "", "", "06 Nos"], ["24\" Vernier", "", "", "02 Nos"], ["12\" Dial Vernier", "", "", "02 Nos"], ["1 Mtr Vernier", "", "", "02 Nos"], ["Micro Meter", "0 - 25 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "25 - 50 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "50 - 75 MM", "Mitutoyo", "02 Nos"], ["Out Side Micro Meter", "75 - 100 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "100 - 125 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "125 - 150 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "0 - 150 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "150 - 300 MM", "China", "02 Nos"], ["Micro Meter", "300 - 400 MM", "China", "02 Nos"], ["Micro Meter", "400 - 500 MM", "China", "01 No."], ["Micro Meter", "500 - 600 MM", "China", "01 No."], ["Micro Meter", "600 - 700 MM", "China", "01 No."], ["Micro Meter", "700 - 800 MM", "China", "01 No."], ["Micro Meter", "800 - 900 MM", "China", "01 No."], ["Micro Meter", "900 - 1000 MM", "China", "01 No."], ["Inside Micro Meter", "100 - 1 Mtr", "Mitutoyo", "02 Nos"], ["Dial Bore gage", "35 to 60 mm", "", "02 Nos"], ["Dial Bore gage", "50 to 150 mm", "", "02 Nos"], ["Dial Bore gage", "150 to 250 mm", "", "01 No"], ["Slip Gage Box", "1 mm to 100 mm", "", "01 No"], ["Depth Micro meter", "0 to 200 mm", "", "01 No"], ["Hardness Tester", "", "Mitutoyo", "01 No"], ["Surface Finish Tester", "", "Mitutoyo", "01 No"],
 ];

@@ -63,10 +63,9 @@ export default function Home() {
                 Applications
               </h1>
               <p className="mt-5 md:mt-6 text-[16px] md:text-[17px] leading-relaxed text-[#475569] max-w-xl">
-                HSM Hydro Control is a single-window solution for all your
-                hydraulics requirements — custom hydraulic engineering,
-                manufacturing, installation, commissioning and service support
-                across India and overseas.
+                Shri Ramraj Engineering provides design consultation, repairs
+                and modifications of hydraulic and pneumatic cylinders, machine
+                parts, sealing solutions and spares for hydraulic equipment.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -89,8 +88,8 @@ export default function Home() {
               {/* Trust badges */}
               <div className="mt-10 grid grid-cols-3 gap-4 sm:gap-6 max-w-lg">
                 {[
-                  { icon: Award, label: "ISO 9001:2015", sub: "Certified" },
-                  { icon: CalendarDays, label: "Since", sub: "2015" },
+                  { icon: Award, label: "Quality", sub: "Inspection" },
+                  { icon: CalendarDays, label: "Team", sub: "Engineering" },
                   { icon: Wrench, label: "Engineering", sub: "& Service" },
                 ].map((b) => (
                   <div
@@ -113,8 +112,8 @@ export default function Home() {
             <div className="lg:col-span-6 xl:col-span-6 relative">
               <div className="relative rounded-2xl overflow-hidden border border-[#E2E8F0] shadow-[0_20px_50px_-20px_rgba(15,23,42,0.25)]">
                 <img
-                  src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"
-                  alt="Industrial hydraulic power unit manufactured by HSM Hydro Control"
+                  src="/assets/hydraulic-equipment.jpg"
+                  alt="Shri Ramraj Engineering industrial engineering solutions"
                   className="w-full h-[320px] sm:h-[400px] lg:h-[520px] object-cover"
                   loading="eager"
                 />
@@ -131,7 +130,7 @@ export default function Home() {
                     Facility
                   </div>
                   <div className="text-[15px] font-bold text-[#0F172A]">
-                    10,000+ sq.ft.
+                    Industrial
                   </div>
                 </div>
               </div>
@@ -146,7 +145,7 @@ export default function Home() {
                     Team
                   </div>
                   <div className="text-[15px] font-bold text-[#0F172A]">
-                    25+ Engineers
+                    Engineering Team
                   </div>
                 </div>
               </div>
@@ -160,10 +159,10 @@ export default function Home() {
         <div className="container-x py-12 md:py-14">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
             {[
-              { value: "2015", label: "Established" },
-              { value: "ISO 9001:2015", label: "Certified" },
-              { value: "10,000+", label: "Sq. Ft. Facility" },
-              { value: "25+", label: "Team Members" },
+              { value: "350", label: "Bar Test Bench" },
+              { value: "1000", label: "Litre Test Bench" },
+              { value: "10", label: "Micron Filters" },
+              { value: "25", label: "Ton Lifting" },
             ].map((s) => (
               <div
                 key={s.label}
@@ -188,14 +187,14 @@ export default function Home() {
             <div className="relative order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=80"
-                  alt="HSM Hydro Control manufacturing shop floor"
+                  src="/assets/hydraulic-cylinder-finished.jpg"
+                  alt="Shri Ramraj Engineering manufacturing capability"
                   className="rounded-xl w-full h-[220px] md:h-[280px] object-cover border border-[#E2E8F0]"
                   loading="lazy"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
-                  alt="Hydraulic cylinders at HSM facility"
+                  src="/assets/industrial-machinery.jpg"
+                  alt="Hydraulic cylinders and industrial components"
                   className="rounded-xl w-full h-[220px] md:h-[280px] object-cover border border-[#E2E8F0] mt-8"
                   loading="lazy"
                 />
@@ -207,7 +206,7 @@ export default function Home() {
                     Trusted by OEMs across India
                   </div>
                   <div className="text-[11.5px] text-white/60 mt-0.5">
-                    Single-window hydraulic partner since 2015
+                    Engineering and repair support for industrial equipment
                   </div>
                 </div>
               </div>
@@ -215,7 +214,7 @@ export default function Home() {
 
             <div className="order-1 lg:order-2">
               <SectionHeading
-                eyebrow="ABOUT HSM"
+                eyebrow="ABOUT SHRI RAMRAJ ENGINEERING"
                 title="Engineered Hydraulics. Built to Perform."
               />
               <p className="mt-5 text-[15.5px] leading-relaxed text-[#475569]">
@@ -226,8 +225,8 @@ export default function Home() {
                 systems and manufacture customized power units for a wide range
                 of industrial applications. We also have deep expertise in
                 overhauling and repairing hydraulic pumps and motors from
-                reputed global brands including Denison, Hagglunds, Bosch
-                Rexroth, Danfoss, Parker, Eaton, Vickers and Yuken.
+                hydraulic and pneumatic cylinders, machine parts, sealing
+                solutions, spares and metalizing services.
               </p>
 
               <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -251,7 +250,7 @@ export default function Home() {
                   to="/about"
                   className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#0F172A] hover:text-[#F97316] group transition-colors"
                 >
-                  Read More About HSM
+                  Read More About Shri Ramraj Engineering
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </div>
@@ -461,8 +460,8 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-x">
           <SectionHeading
-            eyebrow="WHY HSM"
-            title="Why Choose HSM?"
+            eyebrow="WHY SHRI RAMRAJ ENGINEERING"
+            title="Why Choose Shri Ramraj Engineering?"
             description="We combine engineering depth, manufacturing control and service responsiveness to be a reliable long-term hydraulic partner."
           />
 
@@ -493,8 +492,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 md:mb-12">
             <SectionHeading
               eyebrow="INFRASTRUCTURE"
-              title="Inside HSM"
-              description="A look into our Bangalore manufacturing facility — shop floor, assembly areas, and in-house testing."
+              title="Engineering Capability"
+              description="A look at the industrial engineering and repair capabilities listed in the company profile."
             />
             <Link
               to="/infrastructure"
@@ -597,7 +596,7 @@ export default function Home() {
                 Need a Hydraulic Solution?
               </h2>
               <p className="mt-4 text-[15px] md:text-[16px] text-white/70 max-w-2xl leading-relaxed">
-                Talk to the HSM engineering team about your hydraulic system,
+                Talk to the Shri Ramraj Engineering team about your hydraulic system,
                 component, repair or service requirement. We'll work with you
                 from concept through commissioning.
               </p>
@@ -625,8 +624,8 @@ export default function Home() {
         <div className="container-x">
           <SectionHeading
             eyebrow="CONTACT US"
-            title="Get in Touch With HSM"
-            description="Reach out to our Bangalore head office or Pune branch for enquiries, service, or quotes."
+            title="Get in Touch With Shri Ramraj Engineering"
+            description="Reach out to the registered office or works for enquiries, service, or engineering requirements."
           />
 
           <div className="mt-10 grid lg:grid-cols-5 gap-6">
@@ -705,8 +704,8 @@ export default function Home() {
             {/* Map */}
             <div className="lg:col-span-3 rounded-xl overflow-hidden border border-[#E2E8F0] min-h-[350px] lg:min-h-[520px]">
               <iframe
-                title="HSM Hydro Control Bangalore Location"
-                src="https://www.google.com/maps?q=Peenya+2nd+Stage+Bangalore+560058&output=embed"
+                title="Shri Ramraj Engineering Registered Office Location"
+                src="https://www.google.com/maps?q=57+Kha+Tripathi+Sadan+Baghambari+Road+Allahpur+Prayagraj+Uttar+Pradesh+211006&output=embed"
                 width="100%"
                 height="100%"
                 className="border-0 w-full h-full min-h-[350px] lg:min-h-[520px]"

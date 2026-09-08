@@ -1,24 +1,32 @@
 
 
 
-Clone th Repo : https://github.com/Prateek-Tiwari09/HSM-HYDRO.git
+Shri Ramraj Engineering website
 
-Run this Command : npm install 
+Install dependencies:
 
-Project Start : npm run dev
+```bash
+npm install
+```
 
+Start the development server:
 
-
-
-
-
-
-
-
-
+```bash
+npm run dev
+```
 
 
 
 
 
-"# HSM-HYDRO" 
+
+
+
+
+
+
+
+
+
+
+# Shri Ramraj Engineering

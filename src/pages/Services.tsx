@@ -47,10 +47,9 @@ export default function Services() {
               Hydraulic Services, Repair & Support
             </h1>
             <p className="mt-5 text-[16px] leading-relaxed text-white/75 max-w-2xl">
-              HSM specializes in hydraulic pump, motor, and cylinder repair and
-              remanufacturing for Denison, Sauer Danfoss, Parker, Bosch Rexroth,
-              Eaton, Vickers, Yuken, Hagglunds and many other brands — with a
-              reputation for high-quality service and quick turnaround.
+                      Shri Ramraj Engineering provides cylinder repair and modification,
+                      sealing solutions, metalizing, machining and hard chrome plating
+                      services for heavy industrial applications.
             </p>
           </div>
         </div>
@@ -111,12 +110,12 @@ export default function Services() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
-                "Bosch Rexroth",
+                "Piston Rod Repair",
                 "Parker",
-                "Denison",
+                "Seal Groove Machining",
                 "Sauer Danfoss",
-                "Eaton",
-                "Vickers",
+                "Shaft Repair",
+                "Metalizing",
                 "Yuken",
                 "Hagglunds",
                 "Other OEMs",
@@ -140,7 +139,7 @@ export default function Services() {
             Have a hydraulic system that needs attention?
           </h2>
           <p className="mt-4 text-[15px] text-white/70 leading-relaxed">
-            No matter which industry you work in, the HSM team will help you
+            No matter which industrial application you work in, the Shri Ramraj Engineering team will help you
             achieve high performance, long-term reliability, and maximum
             productivity with your hydraulic equipment.
           </p>
@@ -152,10 +151,10 @@ export default function Services() {
               Request Service <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="tel:+919740392560"
+              href="tel:+919967886168"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 px-6 py-3.5 text-[14.5px] font-semibold text-white hover:bg-white/5 transition-colors"
             >
-              Call +91 97403 92560
+              Call +91 9967886168
             </a>
           </div>
         </div>

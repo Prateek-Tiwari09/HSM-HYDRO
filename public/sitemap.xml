@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://hsmhcpl.com/</loc></url>
-  <url><loc>https://hsmhcpl.com/#/about</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products/hydraulic-components</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products/hydraulic-power-unit</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products/hydraulic-cylinder</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products/hydraulic-test-bench</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products/lube-oil-filtration</loc></url>
-  <url><loc>https://hsmhcpl.com/#/products/hydraulic-manifold-blocks</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/pump-service</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/motor-service</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/cylinder-service</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/troubleshooting</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/amc</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/installation-commissioning</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/retrofit</loc></url>
-  <url><loc>https://hsmhcpl.com/#/services/testing-inspection</loc></url>
-  <url><loc>https://hsmhcpl.com/#/infrastructure</loc></url>
-  <url><loc>https://hsmhcpl.com/#/contact</loc></url>
-  <url><loc>https://hsmhcpl.com/#/faq</loc></url>
-  <url><loc>https://hsmhcpl.com/#/testimonials</loc></url>
-  <url><loc>https://hsmhcpl.com/#/enquiry</loc></url>
-  <url><loc>https://hsmhcpl.com/#/blog</loc></url>
-  <url><loc>https://hsmhcpl.com/#/blog/choosing-a-hydraulic-power-unit</loc></url>
-  <url><loc>https://hsmhcpl.com/#/blog/hydraulic-system-maintenance</loc></url>
-  <url><loc>https://hsmhcpl.com/#/privacy-policy</loc></url>
-  <url><loc>https://hsmhcpl.com/#/terms-of-service</loc></url>
+  <!-- Replace path-only locations with the verified production domain before publishing. -->
+  <url><loc>/</loc></url>
+  <url><loc>/#/about</loc></url>
+  <url><loc>/#/products</loc></url>
+  <url><loc>/#/services</loc></url>
+  <url><loc>/#/infrastructure</loc></url>
+  <url><loc>/#/contact</loc></url>
+  <url><loc>/#/faq</loc></url>
+  <url><loc>/#/testimonials</loc></url>
+  <url><loc>/#/enquiry</loc></url>
+  <url><loc>/#/blog</loc></url>
+  <url><loc>/#/privacy-policy</loc></url>
+  <url><loc>/#/terms-of-service</loc></url>
 </urlset>

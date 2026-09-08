@@ -34,9 +34,9 @@ export default function About() {
               A Single-Window Partner for All Your Hydraulics Requirements
             </h1>
             <p className="mt-5 text-[16px] md:text-[17px] leading-relaxed text-white/75 max-w-2xl">
-              Since 2015, HSM Hydro Control has designed, manufactured,
-              installed, and serviced hydraulic systems for industrial customers
-              across India and overseas.
+              Shri Ramraj Engineering provides design consultation, repairs and
+              modifications of hydraulic and pneumatic cylinders, machine parts,
+              sealing solutions and spares for hydraulic equipment.
             </p>
           </div>
         </div>
@@ -48,22 +48,22 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80"
-                alt="HSM Hydro Control assembly area"
+                src="/assets/piston-rod-repair.jpg"
+                alt="Shri Ramraj Engineering industrial engineering capability"
                 className="rounded-xl w-full h-[360px] md:h-[460px] object-cover border border-[#E2E8F0]"
                 loading="lazy"
               />
               <div className="absolute -bottom-5 -right-5 hidden md:block rounded-xl bg-[#F97316] text-white p-5 shadow-xl">
                 <div className="font-heading text-[30px] font-extrabold leading-none">
-                  2015
+                  SR
                 </div>
                 <div className="text-[12px] uppercase tracking-wide mt-1 font-semibold">
-                  Year Established
+                  Engineering
                 </div>
               </div>
             </div>
             <div>
-              <SectionHeading eyebrow="OUR STORY" title="Engineering Hydraulics, Since 2015" />
+              <SectionHeading eyebrow="OUR STORY" title="Engineering and Repair Expertise" />
               {COMPANY.aboutLong.map((p, i) => (
                 <p key={i} className="mt-4 text-[15px] leading-relaxed text-[#475569]">
                   {p}
@@ -75,10 +75,10 @@ export default function About() {
                   <ShieldCheck className="h-5 w-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[14px] font-semibold text-[#0F172A]">
-                      {COMPANY.certification}
+                      Quality Focus
                     </div>
                     <div className="text-[12.5px] text-[#64748B] mt-0.5">
-                      Certified Quality System
+                      Inspection Criteria
                     </div>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export default function About() {
                   <Factory className="h-5 w-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[14px] font-semibold text-[#0F172A]">
-                      10,000+ sq.ft.
+                      Industrial
                     </div>
                     <div className="text-[12.5px] text-[#64748B] mt-0.5">
                       Manufacturing Facility
@@ -97,7 +97,7 @@ export default function About() {
                   <Users className="h-5 w-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[14px] font-semibold text-[#0F172A]">
-                      25+ Team Members
+                      Young Engineering Team
                     </div>
                     <div className="text-[12.5px] text-[#64748B] mt-0.5">
                       Engineers & Technicians
@@ -108,7 +108,7 @@ export default function About() {
                   <Target className="h-5 w-5 text-[#F97316] flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-[14px] font-semibold text-[#0F172A]">
-                      India + Overseas
+                      Heavy Industry
                     </div>
                     <div className="text-[12.5px] text-[#64748B] mt-0.5">
                       Customer Base
@@ -184,7 +184,7 @@ export default function About() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 text-[11.5px] font-semibold tracking-[0.14em] uppercase mb-4 text-[#F97316]">
               <span className="h-px w-6 bg-[#F97316]/50" />
-              WHY CHOOSE HSM
+              WHY CHOOSE SHRI RAMRAJ ENGINEERING
             </div>
             <h2 className="font-heading text-[32px] md:text-[40px] font-bold leading-[1.1] text-white">
               A Hydraulic Partner You Can Rely On
@@ -219,7 +219,7 @@ export default function About() {
               <SectionHeading
                 eyebrow="INFRASTRUCTURE"
                 title="Our Manufacturing Facility"
-                description="HSM operates from a 10,000+ sq.ft. manufacturing facility in Bangalore with dedicated areas for machining, assembly, testing and a dust-free zone for critical components."
+                description="The company profile lists engineering, repair, machining, metalizing, inspection and testing capabilities for heavy industrial machine parts."
               />
               <div className="mt-8 grid grid-cols-2 gap-3">
                 {INFRASTRUCTURE.map((g) => (

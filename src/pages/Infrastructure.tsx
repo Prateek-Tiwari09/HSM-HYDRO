@@ -8,32 +8,32 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import { INFRASTRUCTURE } from "../data/company";
+import { INFRASTRUCTURE, MACHINES, INSTRUMENTS } from "../data/company";
 
 const facilityHighlights = [
   {
     icon: Factory,
-    title: "10,000+ sq.ft. Facility",
+    title: "Industrial Engineering Facility",
     description:
-      "Dedicated manufacturing and assembly space in Peenya, Bangalore.",
+      "Machining, fabrication, repair, inspection and testing capabilities listed in the company profile.",
   },
   {
     icon: Cog,
     title: "Machining & Fabrication",
     description:
-      "In-house capability for manifold blocks, cylinder barrels, pistons and structural parts.",
+      "Boring, lathe, VMC, plano milling, welding and component repair capability.",
   },
   {
     icon: Droplets,
-    title: "In-house Test Benches",
+    title: "Hydraulic Test Bench",
     description:
-      "Test rigs for pumps, motors, cylinders and valves up to 1,200 BAR.",
+      "1000 litres with 10 micron filters and pressure of 350 bar.",
   },
   {
     icon: ShieldCheck,
-    title: "ISO 9001:2015 Quality",
+    title: "Inspection & Testing",
     description:
-      "Documented quality processes from incoming inspection to final dispatch.",
+      "Strict inspection criteria, testing methods and acceptance norms.",
   },
 ];
 
@@ -60,9 +60,9 @@ export default function Infrastructure() {
               Our Manufacturing Facility
             </h1>
             <p className="mt-5 text-[16px] leading-relaxed text-white/75 max-w-2xl">
-              HSM operates from a 10,000+ sq.ft. manufacturing facility in
-              Bangalore equipped for design, machining, assembly and in-house
-              testing of hydraulic equipment.
+              Shri Ramraj Engineering supports design consultation, machining,
+              repair, metalizing, inspection and testing for heavy industrial
+              machine parts.
             </p>
           </div>
         </div>
@@ -97,8 +97,8 @@ export default function Infrastructure() {
         <div className="container-x">
           <SectionHeading
             eyebrow="FACILITY TOUR"
-            title="Inside HSM"
-            description="A look at the different areas of our facility."
+            title="Machines & Facilities"
+            description="The machinery and facilities listed in the Shri Ramraj Engineering company profile."
           />
 
           <div className="mt-10 grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-5">
@@ -203,16 +203,7 @@ export default function Infrastructure() {
               description="Our facility supports the complete product lifecycle — from design and prototyping through manufacturing, assembly, testing and ongoing service."
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                "Hydraulic Power Unit assembly",
-                "Cylinder manufacturing",
-                "Test bench setups",
-                "Manifold block machining",
-                "Lube oil & filtration systems",
-                "Pump/motor repair bays",
-                "Pressure testing",
-                "Quality inspection",
-              ].map((c) => (
+              {MACHINES.map((c) => (
                 <div
                   key={c}
                   className="flex items-start gap-2 rounded-lg border border-[#E2E8F0] bg-white p-4"
@@ -222,6 +213,18 @@ export default function Infrastructure() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="container-x">
+          <SectionHeading eyebrow="INSTRUMENTS" title="Measurement & Inspection Instruments" description="Instrument sizes, makes and quantities listed in the company profile." />
+          <div className="mt-8 overflow-x-auto rounded-xl border border-[#E2E8F0]">
+            <table className="min-w-[640px] w-full text-left text-[13px]">
+              <thead className="bg-[#F8FAFC] text-[#0F172A]"><tr><th className="p-3 font-semibold">Instrument</th><th className="p-3 font-semibold">Size</th><th className="p-3 font-semibold">Make</th><th className="p-3 font-semibold">Qty</th></tr></thead>
+              <tbody>{INSTRUMENTS.map(([instrument, size, make, quantity]) => <tr key={`${instrument}-${size}`} className="border-t border-[#E2E8F0] text-[#475569]"><td className="p-3">{instrument}</td><td className="p-3">{size}</td><td className="p-3">{make}</td><td className="p-3">{quantity}</td></tr>)}</tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -247,7 +250,7 @@ export default function Infrastructure() {
               to="/about"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-[#E2E8F0] bg-white px-6 py-3.5 text-[14.5px] font-semibold text-[#0F172A] hover:border-[#0F172A]/30 transition-colors"
             >
-              About HSM
+              About Shri Ramraj Engineering
             </Link>
           </div>
         </div>

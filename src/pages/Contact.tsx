@@ -29,19 +29,17 @@ const INITIAL_FORM: FormState = {
 };
 
 const INTEREST_OPTIONS = [
-  "Hydraulic Power Unit",
-  "Hydraulic Cylinder",
-  "Hydraulic Components",
-  "Hydraulic Test Bench",
-  "Lube Oil & Filtration System",
-  "Manifold Blocks",
-  "Pump Repair",
-  "Motor Repair",
-  "Cylinder Repair",
-  "AMC",
-  "Installation & Commissioning",
-  "Retrofit / Upgradation",
-  "Troubleshooting",
+  "Raw Mill Cylinders",
+  "HAGC Roll Force Cylinders",
+  "Ladle Turret & Tundish Cylinders",
+  "Piston Rod Repair",
+  "Seal Groove Machining",
+  "Shaft & Coupling Repair",
+  "Metalizing Services",
+  "Hard Chrome Plating",
+  "Hydraulic & Pneumatic Seals",
+  "Hydraulic & Pneumatic Fittings",
+  "Design Consultation",
   "Other",
 ];
 
@@ -99,7 +97,7 @@ export default function Contact() {
               CONTACT
             </div>
             <h1 className="font-heading text-[38px] md:text-[48px] font-extrabold leading-[1.05] text-white">
-              Let's Build Your Hydraulic Solution
+              Let's Discuss Your Engineering Requirement
             </h1>
             <p className="mt-5 text-[16px] leading-relaxed text-white/75 max-w-2xl">
               Have a requirement, repair request or hydraulic system problem?
@@ -121,8 +119,7 @@ export default function Contact() {
                   Contact Information
                 </h2>
                 <p className="text-[14.5px] text-[#64748B] leading-relaxed">
-                  Reach us at our Bangalore head office or Pune branch. We
-                  respond to enquiries within one working day.
+                  Contact Shri Ramraj Engineering at the registered office or works for engineering enquiries.
                 </p>
               </div>
 
@@ -207,14 +204,14 @@ export default function Contact() {
                         Enquiry details validated
                       </h3>
                       <p className="mt-1 text-[14px] text-green-800/80 leading-relaxed">
-                        Your details are ready to share with the HSM team. This
+                        Your details are ready to share with the Shri Ramraj Engineering team. This
                         static form does not transmit or store messages yet.
                         Please call us at{" "}
                         <a
-                          href="tel:+919740392560"
+                          href="tel:+919967886168"
                           className="font-semibold underline"
                         >
-                          +91 97403 92560
+                          +91 9967886168
                         </a>
                         .
                       </p>
@@ -327,7 +324,7 @@ export default function Contact() {
                       </button>
                       <p className="mt-3 text-[12.5px] text-[#64748B]">
                         By submitting this form, you agree to be contacted by
-                        the HSM Hydro Control team regarding your enquiry.
+                        the Shri Ramraj Engineering team regarding your enquiry.
                       </p>
                     </div>
                   </form>
@@ -343,8 +340,8 @@ export default function Contact() {
         <div className="container-x">
           <div className="rounded-2xl overflow-hidden border border-[#E2E8F0] h-[380px]">
             <iframe
-              title="HSM Hydro Control Bangalore Location"
-              src="https://www.google.com/maps?q=Peenya+2nd+Stage+Bangalore+560058&output=embed"
+              title="Shri Ramraj Engineering Registered Office Location"
+              src="https://www.google.com/maps?q=57+Kha+Tripathi+Sadan+Baghambari+Road+Allahpur+Prayagraj+Uttar+Pradesh+211006&output=embed"
               width="100%"
               height="100%"
               className="border-0 w-full h-full"

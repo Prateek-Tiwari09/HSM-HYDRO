@@ -17,34 +17,34 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center gap-2.5 mb-5">
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 border border-white/10 text-[#F97316] font-heading font-extrabold text-sm">
-                HSM
+                <img src="/assets/shri-ramraj-engineering-logo.jpg" alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
               </div>
               <div>
                 <div className="font-heading font-bold text-[15px] text-white">
-                  HSM Hydro Control
+                  Shri Ramraj Engineering
                 </div>
                 <div className="text-[11px] text-white/50 font-medium tracking-wide">
-                  PVT. LTD.
+                  ENGINEERING
                 </div>
               </div>
             </div>
             <p className="text-[14px] leading-relaxed text-white/70 max-w-sm">
-              {COMPANY.description} ISO 9001:2015 certified. Incorporated in 2015.
+              {COMPANY.description}
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://hsmhcpl.com"
+                href="mailto:sales1.srre@gmail.com"
                 aria-label="Website"
                 className="flex h-9 w-9 items-center justify-center rounded-md bg-white/5 border border-white/10 text-white/60 hover:bg-[#F97316] hover:text-white hover:border-[#F97316] transition-colors"
               >
                 <Globe className="h-4 w-4" />
               </a>
               <a
-                href="mailto:sales@hsmhcpl.com"
+                href="tel:+919967886168"
                 aria-label="Email"
                 className="flex h-9 w-9 items-center justify-center rounded-md bg-white/5 border border-white/10 text-white/60 hover:bg-[#F97316] hover:text-white hover:border-[#F97316] transition-colors"
               >
-                <Mail className="h-4 w-4" />
+                <Phone className="h-4 w-4" />
               </a>
             </div>
           </div>

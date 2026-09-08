@@ -105,11 +105,11 @@ export default function ServiceDetail() {
                   Request This Service <ArrowRight className="h-4 w-4" />
                 </Link>
                 <a
-                  href="tel:+919740392560"
+                  href="tel:+919967886168"
                   className="inline-flex items-center justify-center gap-2 rounded-md border border-[#E2E8F0] bg-white px-6 py-3.5 text-[14px] font-semibold text-[#0F172A] hover:border-[#0F172A]/30 transition-colors"
                 >
                   <Phone className="h-4 w-4 text-[#F97316]" />
-                  +91 97403 92560
+                  +91 9967886168
                 </a>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function ServiceDetail() {
                 BENEFITS
               </div>
               <h2 className="font-heading text-[30px] md:text-[36px] font-bold leading-tight text-[#0F172A]">
-                Why Service with HSM?
+                Why Shri Ramraj Engineering?
               </h2>
               <p className="mt-4 text-[15px] leading-relaxed text-[#475569]">
                 We combine technical expertise, OEM-grade spare parts and
@@ -237,12 +237,12 @@ export default function ServiceDetail() {
                 We Service All Major OEM Brands
               </h2>
               <p className="mt-4 text-[14.5px] leading-relaxed text-white/70">
-                Including Bosch Rexroth, Parker, Denison, Sauer Danfoss, Eaton,
-                Vickers, Yuken, Hagglunds and many others.
+                Our work is grounded in application knowledge, strict inspection
+                criteria, testing methods and acceptance norms.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-2.5">
-              {["Rexroth", "Parker", "Denison", "Danfoss", "Eaton", "Vickers", "Yuken", "Hagglunds", "+ More"].map(
+              {["Repair", "Cladding", "Welding", "Metal Spraying", "Inspection", "Testing", "Custom Seals", "Machining", "+ More"].map(
                 (b) => (
                   <div
                     key={b}
@@ -321,7 +321,7 @@ export default function ServiceDetail() {
                   Send Enquiry <ArrowRight className="h-4 w-4" />
                 </Link>
                 <a
-                  href="tel:+919740392560"
+                  href="tel:+919967886168"
                   className="inline-flex items-center justify-center gap-2 rounded-md border border-white/50 px-5 py-3 text-[14px] font-semibold text-white hover:bg-white/10 transition-colors"
                 >
                   <Phone className="h-4 w-4" />

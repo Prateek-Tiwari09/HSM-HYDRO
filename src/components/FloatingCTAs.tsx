@@ -15,7 +15,7 @@ export default function FloatingCTAs() {
       </a>
       <a
         href={`tel:${PRIMARY_PHONE.replace(/\s/g, "")}`}
-        aria-label="Call HSM"
+        aria-label="Call Shri Ramraj Engineering"
         className="flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-[#F97316] text-white shadow-lg hover:bg-[#EA580C] transition-all hover:scale-105 md:hidden"
       >
         <Phone className="h-5 w-5 md:h-6 md:w-6" />
