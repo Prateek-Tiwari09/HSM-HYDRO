@@ -15,7 +15,7 @@ export const COMPANY = {
 
 export const OFFICES = [
   { type: "Registered Office", address: "57 Kha, Tripathi Sadan, Baghambari Road, Allahpur, Prayagraj, Uttar Pradesh – 211006.", phones: ["+91 9967886168"], emails: ["sales1.srre@gmail.com"] },
-  { type: "Works", address: "Plot No. B-7, Additional MIDC, Anand Nagar, Ambarnath – 410506, Maharashtra, India.", phones: [], emails: [] },
+  { type: "Works", address: "Plot No. B-7, Additional MIDC, Anand Nagar, Ambarnath – 410506, Maharashtra, India.", phones: [8826505042], emails: ['sales1.srre@gmail.com'] },
 ];
 
 export const WHATSAPP_NUMBER = "919967886168";
