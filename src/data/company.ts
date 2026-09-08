@@ -23,20 +23,21 @@ export const PRIMARY_PHONE = "+91 9967886168";
 export const PRIMARY_EMAIL = "sales1.srre@gmail.com";
 export const GSTIN = "09ANLPT4807G1ZL";
 export const IEC = "ANLPT4807G";
-const localImage = "/assets/hydraulic-cylinder-finished.jpg";
+const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
+const localImage = asset("hydraulic-cylinder-finished.jpg");
 
 export type Product = { slug: string; name: string; shortDescription: string; description: string; image: string; features?: string[]; specifications?: { label: string; value: string }[]; applications?: string[] };
 
 const product = (slug: string, name: string, description: string, features: string[], imagePath = localImage): Product => ({ slug, name, shortDescription: description, description, image: imagePath, features });
 export const PRODUCTS: Product[] = [
-  product("raw-mill-cylinders", "Raw Mill Cylinders", "Hydraulic cylinder expertise for raw mill applications.", ["Repair and modification", "Application-focused consultation", "Inspection and testing"], "/assets/hydraulic-cylinder-finished.jpg"),
-  product("hagc-roll-force-cylinders", "HAGC (Roll Force Cylinders)", "Cylinder support for HAGC roll force applications.", ["Repair support", "Piston rod work", "Sealing solutions"], "/assets/hydraulic-cylinder-component.jpg"),
-  product("ladle-tundish-cylinders", "Ladle Turret & Tundish Cylinders", "Engineering support for ladle turret and tundish cylinders.", ["Cylinder repair", "Custom seals", "Testing methods"], "/assets/cylinder-assemblies.jpg"),
-  product("astc-pinch-roll-cylinders", "ASTC & Pinch Roll Cylinders", "Repair and modification support for ASTC and pinch roll cylinders.", ["Repair and modification", "Seal groove machining", "Inspection"], "/assets/piston-rod-repair.jpg"),
-  product("rotary-unions", "Rotary Unions", "Rotary union support for industrial equipment applications.", ["Application consultation", "Supply support", "Sealing solutions"], "/assets/rotary-hydraulic-component.jpg"),
-  product("wrapper-entry-stripper-cylinders", "Wrapper, Entry Guide & Stripper Car Cylinders", "Cylinder support for wrapper roll, entry guide and stripper car applications.", ["Repair support", "Piston rod repair", "Custom seals"], "/assets/cylinder-assemblies.jpg"),
-  product("mill-blocks-sensor-housings", "Mill Blocks & Sensor Housings", "Components for CSP and HSM mills, including sensor housings.", ["Component fabrication", "Application knowledge", "Inspection criteria"], "/assets/industrial-machinery.jpg"),
-  product("seals-fittings", "Hydraulic & Pneumatic Seals and Fittings", "Supply of hydraulic and pneumatic seals and fittings.", ["Hydraulic seals", "Pneumatic seals", "Hydraulic and pneumatic fittings"], "/assets/hydraulic-seals.jpg"),
+  product("raw-mill-cylinders", "Raw Mill Cylinders", "Hydraulic cylinder expertise for raw mill applications.", ["Repair and modification", "Application-focused consultation", "Inspection and testing"], asset("hydraulic-cylinder-finished.jpg")),
+  product("hagc-roll-force-cylinders", "HAGC (Roll Force Cylinders)", "Cylinder support for HAGC roll force applications.", ["Repair support", "Piston rod work", "Sealing solutions"], asset("hydraulic-cylinder-component.jpg")),
+  product("ladle-tundish-cylinders", "Ladle Turret & Tundish Cylinders", "Engineering support for ladle turret and tundish cylinders.", ["Cylinder repair", "Custom seals", "Testing methods"], asset("cylinder-assemblies.jpg")),
+  product("astc-pinch-roll-cylinders", "ASTC & Pinch Roll Cylinders", "Repair and modification support for ASTC and pinch roll cylinders.", ["Repair and modification", "Seal groove machining", "Inspection"], asset("piston-rod-repair.jpg")),
+  product("rotary-unions", "Rotary Unions", "Rotary union support for industrial equipment applications.", ["Application consultation", "Supply support", "Sealing solutions"], asset("rotary-hydraulic-component.jpg")),
+  product("wrapper-entry-stripper-cylinders", "Wrapper, Entry Guide & Stripper Car Cylinders", "Cylinder support for wrapper roll, entry guide and stripper car applications.", ["Repair support", "Piston rod repair", "Custom seals"], asset("cylinder-assemblies.jpg")),
+  product("mill-blocks-sensor-housings", "Mill Blocks & Sensor Housings", "Components for CSP and HSM mills, including sensor housings.", ["Component fabrication", "Application knowledge", "Inspection criteria"], asset("industrial-machinery.jpg")),
+  product("seals-fittings", "Hydraulic & Pneumatic Seals and Fittings", "Supply of hydraulic and pneumatic seals and fittings.", ["Hydraulic seals", "Pneumatic seals", "Hydraulic and pneumatic fittings"], asset("hydraulic-seals.jpg")),
 ];
 
 export type Service = { slug: string; name: string; shortDescription: string; description: string; icon: string; features?: string[] };
@@ -67,10 +68,10 @@ export const WHY_CHOOSE = [
 ];
 export const INDUSTRIES = ["Steel Plants", "Marine Applications"];
 export const INFRASTRUCTURE = [
-  { title: "Horizontal Boring Machine", description: "100 Spindle, 1600 x 1200 x 2500, Make: Toss.", image: "/assets/industrial-machinery.jpg" },
-  { title: "Lathe Machines", description: "460 mm centre height x 3200 mm and 670 mm centre height x 2500 mm. Make: Rajendra.", image: "/assets/shaft-repair.jpg" },
-  { title: "VMC & Plano Miller", description: "VMC machines by Lead Well and STM, plus Plano Miller 1200H x 1500W x 4000L, Make: Korea.", image: "/assets/hydraulic-equipment.jpg" },
-  { title: "Hydraulic Test Bench", description: "1000 litres with 10 micron filters and pressure of 350 bar.", image: "/assets/cylinder-assemblies.jpg" },
+  { title: "Horizontal Boring Machine", description: "100 Spindle, 1600 x 1200 x 2500, Make: Toss.", image: asset("industrial-machinery.jpg") },
+  { title: "Lathe Machines", description: "460 mm centre height x 3200 mm and 670 mm centre height x 2500 mm. Make: Rajendra.", image: asset("shaft-repair.jpg") },
+  { title: "VMC & Plano Miller", description: "VMC machines by Lead Well and STM, plus Plano Miller 1200H x 1500W x 4000L, Make: Korea.", image: asset("hydraulic-equipment.jpg") },
+  { title: "Hydraulic Test Bench", description: "1000 litres with 10 micron filters and pressure of 350 bar.", image: asset("cylinder-assemblies.jpg") },
 ];
 export const MACHINES = [
   "Horizontal Boring Machine — 100 Spindle, 1600 x 1200 x 2500, Make: Toss",

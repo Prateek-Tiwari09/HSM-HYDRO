@@ -112,7 +112,7 @@ export default function Home() {
             <div className="lg:col-span-6 xl:col-span-6 relative">
               <div className="relative rounded-2xl overflow-hidden border border-[#E2E8F0] shadow-[0_20px_50px_-20px_rgba(15,23,42,0.25)]">
                 <img
-                  src="/assets/hydraulic-equipment.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/hydraulic-equipment.jpg`}
                   alt="Shri Ramraj Engineering industrial engineering solutions"
                   className="w-full h-[320px] sm:h-[400px] lg:h-[520px] object-cover"
                   loading="eager"
@@ -187,13 +187,13 @@ export default function Home() {
             <div className="relative order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/assets/hydraulic-cylinder-finished.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/hydraulic-cylinder-finished.jpg`}
                   alt="Shri Ramraj Engineering manufacturing capability"
                   className="rounded-xl w-full h-[220px] md:h-[280px] object-cover border border-[#E2E8F0]"
                   loading="lazy"
                 />
                 <img
-                  src="/assets/industrial-machinery.jpg"
+                  src={`${import.meta.env.BASE_URL}assets/industrial-machinery.jpg`}
                   alt="Hydraulic cylinders and industrial components"
                   className="rounded-xl w-full h-[220px] md:h-[280px] object-cover border border-[#E2E8F0] mt-8"
                   loading="lazy"

@@ -48,7 +48,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="relative">
               <img
-                src="/assets/piston-rod-repair.jpg"
+                src={`${import.meta.env.BASE_URL}assets/piston-rod-repair.jpg`}
                 alt="Shri Ramraj Engineering industrial engineering capability"
                 className="rounded-xl w-full h-[360px] md:h-[460px] object-cover border border-[#E2E8F0]"
                 loading="lazy"

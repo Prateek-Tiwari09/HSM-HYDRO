@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5 group" aria-label="Shri Ramraj Engineering Home">
           <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0F172A] text-[#F97316] font-heading font-extrabold text-sm tracking-tight">
-            <img src="/assets/shri-ramraj-engineering-logo.jpg" alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
+            <img src={`${import.meta.env.BASE_URL}assets/shri-ramraj-engineering-logo.jpg`} alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-heading font-bold text-[15px] text-[#0F172A]">
@@ -156,7 +156,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between h-16 px-5 border-b border-[#E2E8F0]">
               <div className="flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0F172A] text-[#F97316] font-heading font-extrabold text-[12px]">
-                  <img src="/assets/shri-ramraj-engineering-logo.jpg" alt="Shri Ramraj Engineering logo" className="h-9 w-9 rounded-md object-cover" />
+                  <img src={`${import.meta.env.BASE_URL}assets/shri-ramraj-engineering-logo.jpg`} alt="Shri Ramraj Engineering logo" className="h-9 w-9 rounded-md object-cover" />
                 </div>
                 <span className="font-heading font-bold text-[15px] text-[#0F172A]">
                   Shri Ramraj Engineering

@@ -4,7 +4,7 @@ import { AlertCircle, ArrowRight, CheckCircle2, ChevronDown, Send } from "lucide
 import SectionHeading from "../components/SectionHeading";
 import { COMPANY, PRIMARY_EMAIL, PRIMARY_PHONE, PRODUCTS, SERVICES } from "../data/company";
 
-const image = "/assets/hydraulic-equipment.jpg";
+const image = `${import.meta.env.BASE_URL}assets/hydraulic-equipment.jpg`;
 const articles = [
   { slug: "hydraulic-cylinder-repair", title: "Approaching Hydraulic Cylinder Repair", summary: "Application knowledge, inspection and suitable repair methods support dependable industrial cylinder work.", date: "Engineering note", sections: ["Cylinder repair begins with understanding the application, operating condition and observed damage. Inspection helps identify the appropriate repair or modification path.", "Piston rod repair, cladding, seal groove machining and custom seal supply are among the supported Shri Ramraj Engineering services.", "Share the application details with the engineering team through the enquiry form for a requirement-specific discussion."] },
   { slug: "industrial-component-maintenance", title: "Industrial Component Maintenance", summary: "Repair, metalizing and inspection can extend the useful service life of heavy industrial machine parts.", date: "Service note", sections: ["Mill shafts, piston rods, pinions and crank shafts may require carefully selected repair methods and controlled inspection.", "Shri Ramraj Engineering offers cladding, welding, metal spraying, shaft repair, coupling repair and hard chrome plating services.", "Final methods, acceptance norms and delivery terms are confirmed for each requirement."] },

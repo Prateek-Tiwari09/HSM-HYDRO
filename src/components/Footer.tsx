@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <div className="flex items-center gap-2.5 mb-5">
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 border border-white/10 text-[#F97316] font-heading font-extrabold text-sm">
-                <img src="/assets/shri-ramraj-engineering-logo.jpg" alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
+                <img src={`${import.meta.env.BASE_URL}assets/shri-ramraj-engineering-logo.jpg`} alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
               </div>
               <div>
                 <div className="font-heading font-bold text-[15px] text-white">
