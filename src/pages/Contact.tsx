@@ -204,11 +204,12 @@ export default function Contact() {
                     <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-heading text-[17px] font-bold text-green-900">
-                        Thank you for your enquiry
+                        Enquiry details validated
                       </h3>
                       <p className="mt-1 text-[14px] text-green-800/80 leading-relaxed">
-                        We have received your message and will respond within
-                        one working day. For urgent matters, please call us at{" "}
+                        Your details are ready to share with the HSM team. This
+                        static form does not transmit or store messages yet.
+                        Please call us at{" "}
                         <a
                           href="tel:+919740392560"
                           className="font-semibold underline"

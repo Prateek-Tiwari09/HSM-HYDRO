@@ -33,7 +33,7 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="#"
+                href="https://hsmhcpl.com"
                 aria-label="Website"
                 className="flex h-9 w-9 items-center justify-center rounded-md bg-white/5 border border-white/10 text-white/60 hover:bg-[#F97316] hover:text-white hover:border-[#F97316] transition-colors"
               >
@@ -151,13 +151,13 @@ export default function Footer() {
             © {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-5 text-[12.5px] text-white/50">
-            <a href="#" className="hover:text-white/80 transition-colors">
+            <Link to="/privacy-policy" className="hover:text-white/80 transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white/80 transition-colors">
+            </Link>
+            <Link to="/terms-of-service" className="hover:text-white/80 transition-colors">
               Terms of Service
-            </a>
-            <a href="#" className="hover:text-white/80 transition-colors">
+            </Link>
+            <a href="/sitemap.xml" className="hover:text-white/80 transition-colors">
               Sitemap
             </a>
           </div>
