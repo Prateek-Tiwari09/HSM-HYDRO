@@ -15,7 +15,7 @@ export default function About() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative bg-[#0F172A] text-white overflow-hidden">
+      <section className="blueprint-grid text-white overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.08]"
           style={{
@@ -246,7 +246,7 @@ export default function About() {
                   src={g.image}
                   alt={g.title}
                   loading="lazy"
-                  className={`rounded-xl object-cover border border-[#E2E8F0] ${
+                  className={`rounded-xl object-cover border border-[#E2E8F0] opacity-90 ${
                     i === 0 ? "col-span-2 h-56" : "h-44"
                   }`}
                 />

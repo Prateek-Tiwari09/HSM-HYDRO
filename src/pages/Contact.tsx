@@ -81,7 +81,7 @@ export default function Contact() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#0F172A] text-white relative overflow-hidden">
+      <section className="blueprint-grid text-white relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.08]"
           style={{

@@ -41,7 +41,7 @@ export default function Infrastructure() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#0F172A] text-white relative overflow-hidden">
+      <section className="blueprint-grid text-white relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.08]"
           style={{
@@ -115,10 +115,10 @@ export default function Infrastructure() {
                 <div className="text-[11px] font-semibold uppercase tracking-wide text-[#F97316] mb-1">
                   01
                 </div>
-                <h3 className="font-heading text-[22px] md:text-[26px] font-bold">
+                <h3 className="font-heading text-[22px] md:text-[26px] !text-white font-bold ">
                   {INFRASTRUCTURE[0].title}
                 </h3>
-                <p className="mt-1 text-[13.5px] text-white/80 max-w-md">
+                <p className="mt-1 text-[13.5px] text-white max-w-md">
                   {INFRASTRUCTURE[0].description}
                 </p>
               </div>
@@ -137,10 +137,10 @@ export default function Infrastructure() {
                 <div className="text-[11px] font-semibold uppercase tracking-wide text-[#F97316] mb-1">
                   02
                 </div>
-                <h3 className="font-heading text-[20px] font-bold">
+                <h3 className="font-heading text-[20px] font-bold !text-white">
                   {INFRASTRUCTURE[1].title}
                 </h3>
-                <p className="mt-1 text-[13px] text-white/80">
+                <p className="mt-1 text-[13px] text-white">
                   {INFRASTRUCTURE[1].description}
                 </p>
               </div>
@@ -159,10 +159,10 @@ export default function Infrastructure() {
                 <div className="text-[11px] font-semibold uppercase tracking-wide text-[#F97316] mb-1">
                   03
                 </div>
-                <h3 className="font-heading text-[20px] font-bold">
+                <h3 className="font-heading text-[20px] font-bold !text-white">
                   {INFRASTRUCTURE[2].title}
                 </h3>
-                <p className="mt-1 text-[13px] text-white/80">
+                <p className="mt-1 text-[13px] text-white">
                   {INFRASTRUCTURE[2].description}
                 </p>
               </div>
@@ -181,10 +181,10 @@ export default function Infrastructure() {
                 <div className="text-[11px] font-semibold uppercase tracking-wide text-[#F97316] mb-1">
                   04
                 </div>
-                <h3 className="font-heading text-[20px] font-bold">
+                <h3 className="font-heading text-[20px] font-bold !text-white">
                   {INFRASTRUCTURE[3].title}
                 </h3>
-                <p className="mt-1 text-[13px] text-white/80">
+                <p className="mt-1 text-[13px] text-white">
                   {INFRASTRUCTURE[3].description}
                 </p>
               </div>

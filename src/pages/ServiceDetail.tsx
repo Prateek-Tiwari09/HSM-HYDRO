@@ -19,6 +19,14 @@ import {
 import { SERVICES } from "../data/company";
 
 const serviceIcons = [Cog, Wrench, MoveVertical, Search, CalendarCheck, Plug, RefreshCw, ClipboardCheck];
+const serviceImages: Record<string, string> = {
+  "piston-rod-repair": "piston-rod-repair.jpg",
+  "seal-groove-machining": "hydraulic-seals.jpg",
+  "shaft-coupling-repair": "shaft-repair.jpg",
+  "metalizing-services": "hydraulic-equipment.jpg",
+  "hard-chrome-plating": "hydraulic-cylinder-component.jpg",
+  "design-consultation": "industrial-machinery.jpg",
+};
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -115,6 +123,7 @@ export default function ServiceDetail() {
             </div>
             <div>
               <div className="relative rounded-2xl overflow-hidden border border-[#E2E8F0] bg-[#0F172A] p-8 md:p-10 text-white">
+                <img src={`${import.meta.env.BASE_URL}assets/${serviceImages[service.slug]}`} alt={service.name} className="absolute inset-0 h-full w-full object-cover opacity-[0.16]" />
                 <div
                   className="absolute inset-0 opacity-[0.07]"
                   style={{
@@ -276,8 +285,10 @@ export default function ServiceDetail() {
               <Link
                 key={r.slug}
                 to={`/services/${r.slug}`}
-                className="group rounded-xl border border-[#E2E8F0] p-5 hover:shadow-md hover:border-[#F97316]/40 transition-all"
+                className="group relative overflow-hidden rounded-xl border border-[#E2E8F0] p-5 hover:shadow-md hover:border-[#F97316]/40 transition-all"
               >
+                <img src={`${import.meta.env.BASE_URL}assets/${serviceImages[r.slug]}`} alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.07]" />
+                <div className="relative">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFF7ED] text-[#F97316]">
                     <Headphones className="h-5 w-5" />
@@ -289,6 +300,7 @@ export default function ServiceDetail() {
                 <p className="text-[13px] text-[#64748B] line-clamp-2">
                   {r.shortDescription}
                 </p>
+                </div>
               </Link>
             ))}
           </div>

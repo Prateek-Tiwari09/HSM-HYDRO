@@ -30,6 +30,16 @@ import {
   INFRASTRUCTURE,
 } from "../data/company";
 
+const serviceImages: Record<string, string> = {
+  "piston-rod-repair": "piston-rod-repair.jpg",
+  "seal-groove-machining": "hydraulic-seals.jpg",
+  "shaft-coupling-repair": "shaft-repair.jpg",
+  "metalizing-services": "hydraulic-equipment.jpg",
+  "hard-chrome-plating": "hydraulic-cylinder-component.jpg",
+  "design-consultation": "industrial-machinery.jpg",
+};
+const whyImages = ["industrial-machinery.jpg", "hydraulic-equipment.jpg", "hydraulic-cylinder-finished.jpg", "piston-rod-repair.jpg", "rotary-hydraulic-component.jpg", "hydraulic-seals.jpg"];
+
 const capabilityIcons = [Cog, Hammer, Wrench, Settings];
 
 export default function Home() {
@@ -37,6 +47,7 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="relative overflow-hidden bg-white border-b border-[#E2E8F0]">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.18] blueprint-grid" />
         <div className="absolute inset-0 bg-gradient-to-br from-[#F8FAFC] via-white to-white" />
         {/* Subtle grid */}
         <div
@@ -58,7 +69,7 @@ export default function Home() {
                 Complete Hydraulic Solutions for{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10">Industrial</span>
-                  <span className="absolute inset-x-0 bottom-1.5 h-3 bg-[#F97316]/20 -z-0" />
+                  {/* <span className="absolute inset-x-0 bottom-1 h-9 bg-[#F97316]/20 -z-0" /> */}
                 </span>{" "}
                 Applications
               </h1>
@@ -436,8 +447,10 @@ export default function Home() {
               <Link
                 key={s.slug}
                 to={`/services/${s.slug}`}
-                className="group rounded-xl border border-[#E2E8F0] bg-white p-5 hover:shadow-md hover:border-[#F97316]/40 transition-all"
+                className="group relative overflow-hidden rounded-xl border border-[#E2E8F0] bg-white p-5 hover:shadow-md hover:border-[#F97316]/40 transition-all"
               >
+                <img src={`${import.meta.env.BASE_URL}assets/${serviceImages[s.slug]}`} alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.08]" />
+                <div className="relative">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#FFF7ED] text-[#F97316]">
                     <Wrench className="h-5 w-5" />
@@ -450,6 +463,7 @@ export default function Home() {
                 <p className="text-[13px] leading-relaxed text-[#64748B] line-clamp-3">
                   {s.shortDescription}
                 </p>
+                </div>
               </Link>
             ))}
           </div>
@@ -469,9 +483,11 @@ export default function Home() {
             {WHY_CHOOSE.map((w) => (
               <div
                 key={w.number}
-                className="relative rounded-xl border border-[#E2E8F0] bg-white p-6 md:p-7 hover:border-[#0F172A]/20 hover:shadow-sm transition-all"
+                className="relative overflow-hidden rounded-xl border border-[#E2E8F0] bg-white p-6 md:p-7 hover:border-[#0F172A]/20 hover:shadow-sm transition-all"
               >
-                <div className="font-heading text-[40px] font-extrabold text-[#F97316]/15 leading-none mb-4">
+                <img src={`${import.meta.env.BASE_URL}assets/${whyImages[Number(w.number) - 1]}`} alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.07]" />
+                <div className="relative">
+                <div className="font-heading text-[40px] font-extrabold text-[#F97316]/45 leading-none mb-4">
                   {w.number}
                 </div>
                 <h3 className="font-heading text-[17px] font-bold text-[#0F172A] mb-2">
@@ -480,6 +496,7 @@ export default function Home() {
                 <p className="text-[14px] leading-relaxed text-[#475569]">
                   {w.description}
                 </p>
+                </div>
               </div>
             ))}
           </div>

@@ -24,11 +24,20 @@ const serviceIcons = [
   ClipboardCheck,
 ];
 
+const serviceImages: Record<string, string> = {
+  "piston-rod-repair": "piston-rod-repair.jpg",
+  "seal-groove-machining": "hydraulic-seals.jpg",
+  "shaft-coupling-repair": "shaft-repair.jpg",
+  "metalizing-services": "hydraulic-equipment.jpg",
+  "hard-chrome-plating": "hydraulic-cylinder-component.jpg",
+  "design-consultation": "industrial-machinery.jpg",
+};
+
 export default function Services() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-[#0F172A] text-white relative overflow-hidden">
+      <section className="blueprint-grid text-white relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-[0.08]"
           style={{
@@ -65,8 +74,10 @@ export default function Services() {
                 <Link
                   key={s.slug}
                   to={`/services/${s.slug}`}
-                  className="group rounded-xl border border-[#E2E8F0] bg-white p-6 hover:shadow-lg hover:border-[#F97316]/40 transition-all"
+                  className="group relative overflow-hidden rounded-xl border border-[#E2E8F0] bg-white p-6 hover:shadow-lg hover:border-[#F97316]/40 transition-all"
                 >
+                  <img src={`${import.meta.env.BASE_URL}assets/${serviceImages[s.slug]}`} alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.08]" />
+                  <div className="relative">
                   <div className="flex items-center justify-between mb-5">
                     <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#FFF7ED] text-[#F97316] group-hover:bg-[#F97316] group-hover:text-white transition-colors">
                       <Icon className="h-5 w-5" />
@@ -83,6 +94,7 @@ export default function Services() {
                   </p>
                   <div className="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#F97316]">
                     Learn more <ArrowUpRight className="h-3.5 w-3.5" />
+                  </div>
                   </div>
                 </Link>
               );

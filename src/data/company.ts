@@ -23,7 +23,7 @@ export const PRIMARY_PHONE = "+91 9967886168";
 export const PRIMARY_EMAIL = "sales1.srre@gmail.com";
 export const GSTIN = "09ANLPT4807G1ZL";
 export const IEC = "ANLPT4807G";
-const localImage = "/assets/shri-ramraj-engineering-profile.svg";
+const localImage = `${import.meta.env.BASE_URL}assets/hydraulic-cylinder-finished.jpg`;
 
 export type Product = { slug: string; name: string; shortDescription: string; description: string; image: string; features?: string[]; specifications?: { label: string; value: string }[]; applications?: string[] };
 

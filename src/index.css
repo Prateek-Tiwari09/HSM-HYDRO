@@ -72,6 +72,12 @@ h1, h2, h3, h4, h5, h6 {
   animation: fadeUp 0.6s ease-out forwards;
 }
 
+.blueprint-grid {
+  background-color: #0f172a;
+  background-image: linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(56, 189, 248, 0.07) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
