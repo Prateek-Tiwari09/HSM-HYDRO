@@ -15,7 +15,7 @@ export const COMPANY = {
 
 export const OFFICES = [
   { type: "Registered Office", address: "57 Kha, Tripathi Sadan, Baghambari Road, Allahpur, Prayagraj, Uttar Pradesh – 211006.", phones: ["+91 9967886168"], emails: ["sales1.srre@gmail.com"] },
-  { type: "Works", address: "Plot No. B-7, Additional MIDC, Anand Nagar, Ambarnath – 410506, Maharashtra, India.", phones: [8826505042], emails: ['sales1.srre@gmail.com'] },
+  { type: "Works", address: "Plot No. B-7, Additional MIDC, Anand Nagar, Ambarnath – 410506, Maharashtra, India.", phones: ["+91 8826505042"], emails: ["sales1.srre@gmail.com"] },
 ];
 
 export const WHATSAPP_NUMBER = "919967886168";
@@ -23,21 +23,20 @@ export const PRIMARY_PHONE = "+91 9967886168";
 export const PRIMARY_EMAIL = "sales1.srre@gmail.com";
 export const GSTIN = "09ANLPT4807G1ZL";
 export const IEC = "ANLPT4807G";
-const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
-const localImage = asset("hydraulic-cylinder-finished.jpg");
+const localImage = "/assets/shri-ramraj-engineering-profile.svg";
 
 export type Product = { slug: string; name: string; shortDescription: string; description: string; image: string; features?: string[]; specifications?: { label: string; value: string }[]; applications?: string[] };
 
-const product = (slug: string, name: string, description: string, features: string[], imagePath = localImage): Product => ({ slug, name, shortDescription: description, description, image: imagePath, features });
+const product = (slug: string, name: string, description: string, features: string[]): Product => ({ slug, name, shortDescription: description, description, image: localImage, features });
 export const PRODUCTS: Product[] = [
-  product("raw-mill-cylinders", "Raw Mill Cylinders", "Hydraulic cylinder expertise for raw mill applications.", ["Repair and modification", "Application-focused consultation", "Inspection and testing"], asset("hydraulic-cylinder-finished.jpg")),
-  product("hagc-roll-force-cylinders", "HAGC (Roll Force Cylinders)", "Cylinder support for HAGC roll force applications.", ["Repair support", "Piston rod work", "Sealing solutions"], asset("hydraulic-cylinder-component.jpg")),
-  product("ladle-tundish-cylinders", "Ladle Turret & Tundish Cylinders", "Engineering support for ladle turret and tundish cylinders.", ["Cylinder repair", "Custom seals", "Testing methods"], asset("cylinder-assemblies.jpg")),
-  product("astc-pinch-roll-cylinders", "ASTC & Pinch Roll Cylinders", "Repair and modification support for ASTC and pinch roll cylinders.", ["Repair and modification", "Seal groove machining", "Inspection"], asset("piston-rod-repair.jpg")),
-  product("rotary-unions", "Rotary Unions", "Rotary union support for industrial equipment applications.", ["Application consultation", "Supply support", "Sealing solutions"], asset("rotary-hydraulic-component.jpg")),
-  product("wrapper-entry-stripper-cylinders", "Wrapper, Entry Guide & Stripper Car Cylinders", "Cylinder support for wrapper roll, entry guide and stripper car applications.", ["Repair support", "Piston rod repair", "Custom seals"], asset("cylinder-assemblies.jpg")),
-  product("mill-blocks-sensor-housings", "Mill Blocks & Sensor Housings", "Components for CSP and HSM mills, including sensor housings.", ["Component fabrication", "Application knowledge", "Inspection criteria"], asset("industrial-machinery.jpg")),
-  product("seals-fittings", "Hydraulic & Pneumatic Seals and Fittings", "Supply of hydraulic and pneumatic seals and fittings.", ["Hydraulic seals", "Pneumatic seals", "Hydraulic and pneumatic fittings"], asset("hydraulic-seals.jpg")),
+  product("raw-mill-cylinders", "Raw Mill Cylinders", "Hydraulic cylinder expertise for raw mill applications.", ["Repair and modification", "Application-focused consultation", "Inspection and testing"]),
+  product("hagc-roll-force-cylinders", "HAGC (Roll Force Cylinders)", "Cylinder support for HAGC roll force applications.", ["Repair support", "Piston rod work", "Sealing solutions"]),
+  product("ladle-tundish-cylinders", "Ladle Turret & Tundish Cylinders", "Engineering support for ladle turret and tundish cylinders.", ["Cylinder repair", "Custom seals", "Testing methods"]),
+  product("astc-pinch-roll-cylinders", "ASTC & Pinch Roll Cylinders", "Repair and modification support for ASTC and pinch roll cylinders.", ["Repair and modification", "Seal groove machining", "Inspection"]),
+  product("rotary-unions", "Rotary Unions", "Rotary union support for industrial equipment applications.", ["Application consultation", "Supply support", "Sealing solutions"]),
+  product("wrapper-entry-stripper-cylinders", "Wrapper, Entry Guide & Stripper Car Cylinders", "Cylinder support for wrapper roll, entry guide and stripper car applications.", ["Repair support", "Piston rod repair", "Custom seals"]),
+  product("mill-blocks-sensor-housings", "Mill Blocks & Sensor Housings", "Components for CSP and HSM mills, including sensor housings.", ["Component fabrication", "Application knowledge", "Inspection criteria"]),
+  product("seals-fittings", "Hydraulic & Pneumatic Seals and Fittings", "Supply of hydraulic and pneumatic seals and fittings.", ["Hydraulic seals", "Pneumatic seals", "Hydraulic and pneumatic fittings"]),
 ];
 
 export type Service = { slug: string; name: string; shortDescription: string; description: string; icon: string; features?: string[] };
@@ -57,7 +56,7 @@ export const CAPABILITIES = [
   { title: "Metalizing", description: "Cladding, welding and metal spraying for shafts, rods, pinions and crank shafts." },
   { title: "Inspection & Testing", description: "Strict inspection criteria, production methodology, testing methods and acceptance norms." },
 ];
-export const TECH_STATS = [{ value: "350", unit: "BAR", label: "Test Bench Pressure" }, { value: "1000", unit: "L", label: "Test Bench Capacity" }, { value: "10", unit: "MICRON", label: "Test Bench Filters" }, { value: "2", unit: "CRANES", label: "10-Ton Lifting Cranes" }];
+export const TECH_STATS = [{ value: "350", unit: "BAR", label: "Test Bench Pressure" }, { value: "1000", unit: "L", label: "Test Bench Capacity" }, { value: "10", unit: "MICRON", label: "Test Bench Filters" }, { value: "25", unit: "TON", label: "Lifting Capacity" }];
 export const WHY_CHOOSE = [
   { number: "01", title: "Engineering Team", description: "A young and energetic engineering team with experience in heavy industrial machine parts." },
   { number: "02", title: "Application Knowledge", description: "Methodological expertise shaped around demanding industrial applications." },
@@ -66,12 +65,12 @@ export const WHY_CHOOSE = [
   { number: "05", title: "Engineering Associations", description: "Associations with Bari Metal Finishers and Usha Engineering Work support timely fabrication of components of any size." },
   { number: "06", title: "Service Performance", description: "Service quality and performance reflecting the motto: Serve the Best & supply Earliest at Lowest cost." },
 ];
-export const INDUSTRIES = ["Steel Plants", "Marine Applications"];
+export const INDUSTRIES = ["Steel", "Cement", "Oil & Gas", "Earth Moving", "Marine Applications"];
 export const INFRASTRUCTURE = [
-  { title: "Horizontal Boring Machine", description: "100 Spindle, 1600 x 1200 x 2500, Make: Toss.", image: asset("industrial-machinery.jpg") },
-  { title: "Lathe Machines", description: "460 mm centre height x 3200 mm and 670 mm centre height x 2500 mm. Make: Rajendra.", image: asset("shaft-repair.jpg") },
-  { title: "VMC & Plano Miller", description: "VMC machines by Lead Well and STM, plus Plano Miller 1200H x 1500W x 4000L, Make: Korea.", image: asset("hydraulic-equipment.jpg") },
-  { title: "Hydraulic Test Bench", description: "1000 litres with 10 micron filters and pressure of 350 bar.", image: asset("cylinder-assemblies.jpg") },
+  { title: "Horizontal Boring Machine", description: "100 Spindle, 1600 x 1200 x 2500, Make: Toss.", image: localImage },
+  { title: "Lathe Machines", description: "460 mm centre height x 3200 mm and 670 mm centre height x 2500 mm. Make: Rajendra.", image: localImage },
+  { title: "VMC & Plano Miller", description: "VMC machines by Lead Well and STM, plus Plano Miller 1200H x 1500W x 4000L, Make: Korea.", image: localImage },
+  { title: "Hydraulic Test Bench", description: "1000 litres with 10 micron filters and pressure of 350 bar.", image: localImage },
 ];
 export const MACHINES = [
   "Horizontal Boring Machine — 100 Spindle, 1600 x 1200 x 2500, Make: Toss",
@@ -85,5 +84,5 @@ export const MACHINES = [
   "Hydraulic Test Bench — 1000 litres, 10 micron filters, pressure 350 bar",
 ];
 export const INSTRUMENTS = [
-  ["12\" Vernier", "", "", "06 Nos"], ["24\" Vernier", "", "", "02 Nos"], ["12\" Dial Vernier", "", "", "02 Nos"], ["1 Mtr Vernier", "", "", "02 Nos"], ["Micro Meter", "0 - 25 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "25 - 50 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "50 - 75 MM", "Mitutoyo", "02 Nos"], ["Out Side Micro Meter", "75 - 100 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "100 - 125 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "125 - 150 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "0 - 150 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "150 - 300 MM", "China", "02 Nos"], ["Micro Meter", "300 - 400 MM", "China", "02 Nos"], ["Micro Meter", "400 - 500 MM", "China", "01 No."], ["Micro Meter", "500 - 600 MM", "China", "01 No."], ["Micro Meter", "600 - 700 MM", "China", "01 No."], ["Micro Meter", "700 - 800 MM", "China", "01 No."], ["Micro Meter", "800 - 900 MM", "China", "01 No."], ["Micro Meter", "900 - 1000 MM", "China", "01 No."], ["Inside Micro Meter", "100 - 1 Mtr", "Mitutoyo", "02 Nos"], ["Dial Bore gage", "35 to 60 mm", "", "02 Nos"], ["Dial Bore gage", "50 to 150 mm", "", "02 Nos"], ["Dial Bore gage", "150 to 250 mm", "", "01 No"], ["Slip Gage Box", "1 mm to 100 mm", "", "01 No"], ["Depth Micro meter", "0 to 200 mm", "", "01 No"], ["Hardness Tester", "", "Mitutoyo", "01 No"], ["Surface Finish Tester", "", "Mitutoyo", "01 No"],
+  ["12” Vernier", "", "", "06 Nos"], ["24” Vernier", "", "", "02 Nos"], ["12” Dial Vernier", "", "", "02 Nos"], ["1 Mtr Vernier", "", "", "02 Nos"], ["Micro Meter", "0 – 25 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "25 - 50 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "50 - 75 MM", "Mitutoyo", "02 Nos"], ["Out Side Micro Meter", "75 - 100 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "100 – 125 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "125 - 150 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "0 - 150 MM", "Mitutoyo", "02 Nos"], ["Micro Meter", "150 - 300 MM", "China", "02 Nos"], ["Micro Meter", "300 - 400 MM", "China", "02 Nos"], ["Micro Meter", "400 - 500 MM", "China", "01 No."], ["Micro Meter", "500 - 600 MM", "China", "01 No."], ["Micro Meter", "600 - 700 MM", "China", "01 No."], ["Micro Meter", "700 - 800 MM", "China", "01 No."], ["Micro Meter", "800 - 900 MM", "China", "01 No."], ["Micro Meter", "900 - 1000 MM", "China", "01 No."], ["Inside Micro Meter", "100 - 1 Mtr", "Mitutoyo", "02 Nos"], ["Dial Bore gage", "35 to 60 mm", "", "02 Nos"], ["Dial Bore gage", "50 to 150 mm", "", "02 Nos"], ["Dial Bore gage", "150 to 250 mm", "", "01 No"], ["Slip Gage Box", "1 mm to 100 mm", "", "01 No"], ["Depth Micro meter", "0 to 200 mm", "", "01 No"], ["Hardness Tester", "", "Mitutoyo", "01 No"], ["Surface Finish Tester", "", "Mitutoyo", "01 No"],
 ];
