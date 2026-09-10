@@ -24,16 +24,18 @@ export default function About() {
             backgroundSize: "48px 48px",
           }}
         />
-        <div className="container-x relative py-16 md:py-24">
+        <div className="container-x relative py-4 md:py-10"> {/*changed backgroundSize */}
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-[11.5px] font-semibold tracking-[0.14em] uppercase mb-5 text-[#F97316]">
+            {/*changed line */}
+            <div className="inline-flex items-center gap-2 text-[13.5px] font-semibold tracking-[0.14em] uppercase mb-1.5 text-[#F97316]">
               <span className="h-px w-6 bg-[#F97316]/60" />
               ABOUT US
             </div>
-            <h1 className="font-heading text-[38px] md:text-[48px] lg:text-[54px] font-extrabold leading-[1.05] text-white">
+            {/* chnaged below size*/ }
+            <h1 className="font-heading text-[20px] md:text-[38px] lg:text-[22px]  font-extrabold leading-[1.05] text-white">
               A Single-Window Partner for All Your Hydraulics Requirements
             </h1>
-            <p className="mt-5 text-[16px] md:text-[17px] leading-relaxed text-white/75 max-w-2xl">
+            <p className="mt-5 text-[15px] md:text-[15px]  leading-relaxed text-white/75 max-w-3xl">{/*changed line */}
               Shri Ramraj Engineering provides design consultation, repairs and
               modifications of hydraulic and pneumatic cylinders, machine parts,
               sealing solutions and spares for hydraulic equipment.

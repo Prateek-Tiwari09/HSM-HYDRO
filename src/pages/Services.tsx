@@ -46,16 +46,16 @@ export default function Services() {
             backgroundSize: "48px 48px",
           }}
         />
-        <div className="container-x relative py-16 md:py-20">
+        <div className="container-x relative py-4 md:py-10"> {/*changed backgroundSize */}
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-[11.5px] font-semibold tracking-[0.14em] uppercase mb-5 text-[#F97316]">
+            <div className="inline-flex items-center gap-2 text-[13.5px] font-semibold tracking-[0.14em] uppercase mb-1.5 text-[#F97316]">
               <span className="h-px w-6 bg-[#F97316]/60" />
               OUR SERVICES
             </div>
-            <h1 className="font-heading text-[38px] md:text-[48px] font-extrabold leading-[1.05] text-white">
+            <h1 className="font-heading text-[38px] md:text-[48px] lg:text-[22px] font-extrabold leading-[1.05] text-white">
               Hydraulic Services, Repair & Support
             </h1>
-            <p className="mt-5 text-[16px] leading-relaxed text-white/75 max-w-2xl">
+            <p className="mt-5 text-[15px] leading-relaxed text-white/75 max-w-2xl">
                       Shri Ramraj Engineering provides cylinder repair and modification,
                       sealing solutions, metalizing, machining and hard chrome plating
                       services for heavy industrial applications.

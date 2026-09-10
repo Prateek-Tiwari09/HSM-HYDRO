@@ -61,7 +61,7 @@ export default function Home() {
           }}
         />
 
-        <div className="container-x relative py-14 md:py-20 lg:py-24">
+        <div className="container-x relative py-10 md:py-15 lg:py-24">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <div className="lg:col-span-6 xl:col-span-6">
               
@@ -73,7 +73,7 @@ export default function Home() {
                 </span>{" "}
                 Applications
               </h1>
-              <p className="mt-5 md:mt-6 text-[16px] md:text-[17px] leading-relaxed text-[#475569] max-w-xl">
+              <p className="mt-6 md:mt-4 text-[16px] md:text-[17px] leading-relaxed text-[#475569] max-w-xl">
                 Shri Ramraj Engineering provides design consultation, repairs
                 and modifications of hydraulic and pneumatic cylinders, machine
                 parts, sealing solutions and spares for hydraulic equipment.
@@ -366,26 +366,26 @@ export default function Home() {
           style={{
             backgroundImage:
               "linear-gradient(to right, rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.08) 1px, transparent 1px)",
-            backgroundSize: "48px 48px",
+            backgroundSize: "40px 40px",
           }}
         />
-        <div className="container-x relative">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 text-[11.5px] font-semibold tracking-[0.14em] uppercase mb-4 text-[#F97316]">
+        <div className="container-x relative md:py-9">
+          <div className="max-w-1xl">
+            <div className="inline-flex items-center gap-1 text-[17.5px] font-semibold tracking-[0.14em] uppercase mb-6 text-[#F97316]">
               <span className="h-px w-6 bg-[#F97316]/50" />
               TECHNICAL CAPABILITIES
             </div>
-            <h2 className="font-heading text-[32px] md:text-[40px] lg:text-[44px] font-bold leading-[1.1] text-white">
+            <h2 className="font-heading text-[32px] md:text-[48px] lg:text-[30px] font-bold leading-[1.1] text-white">
               Engineering & Testing Capabilities
             </h2>
-            <p className="mt-4 text-[15px] md:text-[16px] leading-relaxed text-white/70">
+            <p className="mt-4 text-[20px] md:text-[20px] leading-relaxed text-white/70">
               In-house design and testing for flow rates up to 750 LPM and
               pressures up to 1,200 BAR — built to handle the most demanding
               industrial hydraulic applications.
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-2">
             {TECH_STATS.map((s, i) => (
               <div
                 key={s.label}
@@ -602,10 +602,10 @@ export default function Home() {
             backgroundSize: "32px 32px",
           }}
         />
-        <div className="container-x relative py-16 md:py-20">
+        <div className="container-x relative py-7 md:py-13"> {/*chnaged size */}
           <div className="grid lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8">
-              <div className="inline-flex items-center gap-2 text-[11.5px] font-semibold tracking-[0.14em] uppercase mb-4 text-[#F97316]">
+              <div className="inline-flex items-center gap-2 text-[15.5px] font-semibold tracking-[0.14em] uppercase mb-4 text-[#F97316]">
                 <span className="h-px w-6 bg-[#F97316]/50" />
                 GET IN TOUCH
               </div>

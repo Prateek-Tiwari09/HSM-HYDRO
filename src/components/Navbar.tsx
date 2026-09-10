@@ -38,8 +38,8 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-200 ${
         scrolled
-          ? "bg-white/95 backdrop-blur border-b border-[#E2E8F0] shadow-[0_1px_2px_rgba(15,23,42,0.04)]"
-          : "bg-white border-b border-transparent"
+          ? "bg-white/95 border-b border-[#E2E8F0] shadow-[0_1px_2px_rgba(15,23,42,0.04)]"
+          : "bg-white border-b border-white"
       }`}
     >
       <nav className="container-x flex h-16 lg:h-[72px] items-center justify-between">
@@ -48,7 +48,7 @@ export default function Navbar() {
           <div className="flex h-10 w-10 items-center justify-center rounded-md bg-[#0F172A] text-[#F97316] font-heading font-extrabold text-sm tracking-tight">
             <img src={`${import.meta.env.BASE_URL}assets/shri-ramraj-engineering-logo.jpg`} alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
           </div>
-          <div className="hidden sm:flex flex-col leading-tight">
+          <div className="flex flex-col leading-tight">
             <span className="font-heading font-bold text-[15px] text-[#0F172A]">
               Shri Ramraj Engineering
             </span>
@@ -152,7 +152,7 @@ export default function Navbar() {
             className="absolute inset-0 bg-[#0F172A]/50"
             onClick={() => setMobileOpen(false)}
           />
-          <div className="relative ml-auto flex h-full w-[88%] max-w-sm flex-col bg-white shadow-xl">
+          <div className="relative ml-auto flex h-full w-[70%] max-w-sm flex-col bg-white shadow-xl">
             <div className="flex items-center justify-between h-16 px-5 border-b border-[#E2E8F0]">
               <div className="flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0F172A] text-[#F97316] font-heading font-extrabold text-[12px]">

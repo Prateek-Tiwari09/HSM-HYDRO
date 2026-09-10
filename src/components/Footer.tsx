@@ -11,11 +11,11 @@ import { PRODUCTS, SERVICES, OFFICES, COMPANY } from "../data/company";
 export default function Footer() {
   return (
     <footer className="bg-[#0F172A] text-[#CBD5E1]">
-      <div className="container-x py-14 lg:py-16">
-        <div className="grid gap-10 lg:grid-cols-12">
+      <div className="container-x py-7 lg:py-9">  {/*changed Size */}
+        <div className="grid gap-5 lg:grid-cols-12">   {/*changed Size */}
           {/* Column 1: Company */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-2.5 mb-5">
+            <div className="flex items-center gap-2.5 mb-4"> {/*changed Size */}
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 border border-white/10 text-[#F97316] font-heading font-extrabold text-sm">
                 <img src={`${import.meta.env.BASE_URL}assets/shri-ramraj-engineering-logo.jpg`} alt="Shri Ramraj Engineering logo" className="h-10 w-10 rounded-md object-cover" />
               </div>
@@ -31,7 +31,7 @@ export default function Footer() {
             <p className="text-[14px] leading-relaxed text-white/70 max-w-sm">
               {COMPANY.description}
             </p>
-            <div className="mt-6 flex items-center gap-3">
+            <div className="mt-4 flex items-center gap-3">
               <a
                 href="mailto:sales1.srre@gmail.com"
                 aria-label="Website"
@@ -51,10 +51,10 @@ export default function Footer() {
 
           {/* Column 2: Products */}
           <div className="lg:col-span-2">
-            <h4 className="font-heading text-white font-semibold text-[14px] mb-5 tracking-wide uppercase">
+            <h4 className="font-heading text-white font-semibold text-[14px] mb-3 tracking-wide uppercase">
               Products
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-1"> {/*chnaged size */}
               {PRODUCTS.map((p) => (
                 <li key={p.slug}>
                   <Link
@@ -71,10 +71,10 @@ export default function Footer() {
 
           {/* Column 3: Services */}
           <div className="lg:col-span-2">
-            <h4 className="font-heading text-white font-semibold text-[14px] mb-5 tracking-wide uppercase">
+            <h4 className="font-heading text-white font-semibold text-[14px] mb-3 tracking-wide uppercase">
               Services
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-1"> {/*chnaged size */}
               {SERVICES.slice(0, 6).map((s) => (
                 <li key={s.slug}>
                   <Link
@@ -99,7 +99,7 @@ export default function Footer() {
 
           {/* Column 4: Contact */}
           <div className="lg:col-span-4">
-            <h4 className="font-heading text-white font-semibold text-[14px] mb-5 tracking-wide uppercase">
+            <h4 className="font-heading text-white font-semibold text-[14px] mb-3 tracking-wide uppercase">
               Contact
             </h4>
             <div className="space-y-4">
@@ -146,7 +146,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container-x py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="container-x py-3.5 flex flex-col md:flex-row items-center justify-between gap-2.5"> {/*chnaged size */}
           <p className="text-[12.5px] text-white/50">
             © {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
           </p>
