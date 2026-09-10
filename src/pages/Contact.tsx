@@ -96,10 +96,10 @@ export default function Contact() {
               <span className="h-px w-6 bg-[#F97316]/60" />
               CONTACT
             </div>
-            <h1 className="font-heading text-[38px] md:text-[48px] lg:text-[22px] font-extrabold leading-[1.05] text-white">
+            <h1 className="font-heading text-[20px] md:text-[38px] lg:text-[22px]  font-extrabold leading-[1.05] text-white">
               Let's Discuss Your Engineering Requirement
             </h1>
-            <p className="mt-5 text-[16px] leading-relaxed text-white/75 max-w-2xl">
+            <p className="mt-5 text-[15px] leading-relaxed text-white/75 max-w-2xl">
               Have a requirement, repair request or hydraulic system problem?
               Talk to our engineering team — we'll help you specify, design or
               service the right solution.
